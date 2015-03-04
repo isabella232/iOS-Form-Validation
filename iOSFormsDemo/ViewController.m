@@ -3,7 +3,7 @@
 //  DequeApp
 //
 //  Created by Alistair Barrell on 2/27/15.
-//  Copyright (c) 2015 Alistair Barrell. All rights reserved.
+//  Copyright (c) 2015. All rights reserved.
 //
 #import "regex.h"
 #import "ViewController.h"
@@ -52,7 +52,7 @@
     BOOL isValid = [datePredicate evaluateWithObject:dateFieldString];
     if([dateFieldString isEqualToString:@""]){
         _dateField.accessibilityHint = NULL;
-        _dateField.accessibilityLabel = @"Date, this field is required.";
+        _dateField.accessibilityLabel = @"Date, m m / d d / y y y y, this field is required.";
         [_dateReq setHidden:NO];
         UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, _dateField);
     }
