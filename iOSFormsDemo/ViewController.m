@@ -28,6 +28,7 @@
 }
 
 - (IBAction)submitButton:(id)sender {
+    
     //Get input from text fields
     NSString *emailFieldString = [_emailField text];
     NSString *nameFieldString = [_nameField text];
@@ -50,13 +51,15 @@
     // it.
     
     BOOL isValid = [datePredicate evaluateWithObject:dateFieldString];
-    if([dateFieldString isEqualToString:@""]){
+    
+    // if date string is empty, notify user that field is required
+    if([dateFieldString isEqualToString:@""]) {
         _dateField.accessibilityHint = NULL;
         _dateField.accessibilityLabel = @"Date, m m / d d / y y y y, this field is required.";
         [_dateReq setHidden:NO];
         UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, _dateField);
     }
-    else if(!isValid){
+    else if(!isValid) {
         // set accessibility hint to nothing and label to more verbose, descriptive label
         _dateField.accessibilityHint = NULL;
         _dateField.accessibilityLabel = @"Date, m m / d d / y y y y, please enter a valid date.";
@@ -69,17 +72,20 @@
         UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, _dateField);
         allValid = FALSE;
     }
-    else{
+    else {
         [_dateReq setHidden:YES];
     }
+    
     isValid = [emailPredicate evaluateWithObject:emailFieldString];
-    if([emailFieldString isEqualToString:@""]){
+    
+    // if email string is empty, notify user that the field is required
+    if([emailFieldString isEqualToString:@""]) {
         _emailField.accessibilityHint = NULL;
         _emailField.accessibilityLabel = @"Email, this field is required.";
         [_emailReq setHidden:NO];
         UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, _emailField);
     }
-    else if(!isValid){
+    else if(!isValid) {
         // set accessibility hint to nothing and label to more verbose, descriptive label
         _emailField.accessibilityHint = NULL;
         _emailField.accessibilityLabel = @"Email, please enter a valid email.";
@@ -92,13 +98,13 @@
         UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, _emailField);
         allValid = FALSE;
     }
-    else{
+    else {
         [_emailReq setHidden:YES];
     }
     
     // check if name input is valid (of the form 'FirstName LastName')
     isValid = [namePredicate evaluateWithObject:nameFieldString];
-    if(!isValid){
+    if(!isValid) {
         // set accessibility hint to nothing and label to a more verbose, descriptive label
         _nameField.accessibilityHint = NULL;
         _nameField.accessibilityLabel = @"Name, this field is required.";
@@ -110,9 +116,10 @@
         UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, _nameField);
         allValid = FALSE;
     }
-    else{
+    else {
         [_nameReq setHidden:YES];
     }
+    
     // if not all fields were valid, we return without submitting the form
     if(!allValid){
         return;
@@ -125,7 +132,8 @@
        
     
 }
-- (IBAction)backgroundTap:(id)sender{
+
+- (IBAction)backgroundTap:(id)sender {
     //get rid of keyboard on background tap
     [self.view endEditing:YES];
 }
@@ -137,6 +145,7 @@
     [textField resignFirstResponder];
     return YES;
 }
+
 - (NSUInteger)supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskPortrait;
