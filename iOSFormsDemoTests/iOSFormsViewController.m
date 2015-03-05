@@ -42,6 +42,17 @@
     XCTAssert(![testController.emailReq isHidden]);
 }
 
+-(void)testAccessibilityLabelsAndHintsOnStartup {
+    ViewController *testController;
+    NSString *stdHint = @"This field is required";
+    XCTAssert(![testController.emailField.accessibilityHint isEqualToString:stdHint]);
+    XCTAssert(![testController.nameField.accessibilityHint isEqualToString:stdHint]);
+    XCTAssert(![testController.dateField.accessibilityHint isEqualToString:stdHint]);
+    XCTAssert(![testController.dateField.accessibilityLabel isEqualToString:@"Date"]);
+    XCTAssert(![testController.nameField.accessibilityLabel isEqualToString:@"Name"]);
+    XCTAssert(![testController.emailField.accessibilityLabel isEqualToString:@"Email"]);
+}
+
 - (void)testRegex {
    // ViewController *testController;
     //testController.emailField.text = @"";
