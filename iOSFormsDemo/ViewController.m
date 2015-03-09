@@ -36,7 +36,7 @@
     
     //Set up predicates to verify validity of text box input
     NSPredicate *namePredicate = [NSPredicate
-                                  predicateWithFormat:@"SELF MATCHES '[A-Za-z0-9]+'"];
+                                  predicateWithFormat:@"SELF MATCHES '[A-Za-z0-9 ]+'"];
     
     NSPredicate *emailPredicate = [NSPredicate
                                predicateWithFormat:
