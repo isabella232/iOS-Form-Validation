@@ -3,7 +3,6 @@
     <dependencies>
         <development version="6000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -285,7 +284,6 @@
                             <constraint firstItem="7bT-GW-E21" firstAttribute="top" secondItem="Ye2-6z-WHB" secondAttribute="bottom" id="Jv1-Jd-tza"/>
                             <constraint firstItem="lV0-WU-wBE" firstAttribute="top" secondItem="ZDO-hc-PW8" secondAttribute="bottom" constant="24" id="Nwd-cH-oXb"/>
                             <constraint firstItem="7bT-GW-E21" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="QMn-0W-qSM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Udf-J9-544" secondAttribute="trailing" constant="26" id="Tao-YL-imD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ovH-RX-YrP" secondAttribute="trailing" constant="1" id="U4w-D9-00p"/>
                             <constraint firstAttribute="centerX" secondItem="ovH-RX-YrP" secondAttribute="centerX" id="UQQ-qC-nq4"/>
                             <constraint firstItem="lV0-WU-wBE" firstAttribute="width" secondItem="ZDO-hc-PW8" secondAttribute="width" id="Uqm-5m-6W5"/>
