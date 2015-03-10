@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8BCCB3101AA60BA1006C6AE0 /* Deque-Systems-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BCCB30F1AA60BA1006C6AE0 /* Deque-Systems-logo.jpg */; };
 		8BCCB31A1AA63A13006C6AE0 /* DQAccessibitylTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCCB3191AA63A13006C6AE0 /* DQAccessibitylTextField.m */; };
 		8BD998091AA8BAAF00DBA6AF /* iOSFormsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD998081AA8BAAF00DBA6AF /* iOSFormsViewController.m */; };
 		8BDAD3541AA60A95009B3458 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD3531AA60A95009B3458 /* main.m */; };
@@ -30,7 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8BCCB30F1AA60BA1006C6AE0 /* Deque-Systems-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Deque-Systems-logo.jpg"; path = "../../Deque-Systems-logo.jpg"; sourceTree = "<group>"; };
 		8BCCB3181AA63A13006C6AE0 /* DQAccessibitylTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQAccessibitylTextField.h; sourceTree = "<group>"; };
 		8BCCB3191AA63A13006C6AE0 /* DQAccessibitylTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQAccessibitylTextField.m; sourceTree = "<group>"; };
 		8BD998081AA8BAAF00DBA6AF /* iOSFormsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSFormsViewController.m; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				8BDAD3521AA60A95009B3458 /* Info.plist */,
-				8BCCB30F1AA60BA1006C6AE0 /* Deque-Systems-logo.jpg */,
 				8BDAD3531AA60A95009B3458 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -210,7 +207,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BCCB3101AA60BA1006C6AE0 /* Deque-Systems-logo.jpg in Resources */,
 				8BDAD35D1AA60A95009B3458 /* Main.storyboard in Resources */,
 				8BDAD3621AA60A95009B3458 /* LaunchScreen.xib in Resources */,
 				8BDAD35F1AA60A95009B3458 /* Images.xcassets in Resources */,
