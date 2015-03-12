@@ -24,6 +24,7 @@
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SSY-0m-fk1">
                                         <rect key="frame" x="59" y="0.0" width="507" height="30"/>
+                                        <color key="backgroundColor" red="0.82958491161616166" green="0.82958491161616166" blue="0.82958491161616166" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration" hint="This field is required" label="Name"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
@@ -81,6 +82,7 @@
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Ax-9y-1Nv">
                                         <rect key="frame" x="112" y="5" width="454" height="32"/>
+                                        <color key="backgroundColor" red="0.79401436240000001" green="0.79401436240000001" blue="0.79401436240000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration" hint="m m / d d / y y y y, This field is required" label="Date"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="1xV-4I-25u"/>
@@ -246,6 +248,7 @@
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aPX-Fc-04t">
                                         <rect key="frame" x="59" y="0.0" width="507" height="30"/>
+                                        <color key="backgroundColor" red="0.79401436240000001" green="0.79401436240000001" blue="0.79401436240000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration" hint="This field is required" label="Email"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="qmF-TU-4tD"/>
