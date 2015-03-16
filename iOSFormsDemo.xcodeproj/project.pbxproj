@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8BCCB31A1AA63A13006C6AE0 /* DQAccessibitylTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCCB3191AA63A13006C6AE0 /* DQAccessibitylTextField.m */; };
 		8BD998091AA8BAAF00DBA6AF /* iOSFormsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD998081AA8BAAF00DBA6AF /* iOSFormsViewController.m */; };
-		8BD9982E1AB0069A00DBA6AF /* Deque-Systems-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BD9982D1AB0069A00DBA6AF /* Deque-Systems-logo.jpg */; };
 		8BDAD3541AA60A95009B3458 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD3531AA60A95009B3458 /* main.m */; };
 		8BDAD3571AA60A95009B3458 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD3561AA60A95009B3458 /* AppDelegate.m */; };
 		8BDAD35A1AA60A95009B3458 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD3591AA60A95009B3458 /* ViewController.m */; };
@@ -33,7 +32,6 @@
 		8BCCB3181AA63A13006C6AE0 /* DQAccessibitylTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQAccessibitylTextField.h; sourceTree = "<group>"; };
 		8BCCB3191AA63A13006C6AE0 /* DQAccessibitylTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQAccessibitylTextField.m; sourceTree = "<group>"; };
 		8BD998081AA8BAAF00DBA6AF /* iOSFormsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSFormsViewController.m; sourceTree = "<group>"; };
-		8BD9982D1AB0069A00DBA6AF /* Deque-Systems-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Deque-Systems-logo.jpg"; sourceTree = "<group>"; };
 		8BDAD34E1AA60A95009B3458 /* iOSFormsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSFormsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDAD3521AA60A95009B3458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BDAD3531AA60A95009B3458 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 		8BDAD3511AA60A95009B3458 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8BD9982D1AB0069A00DBA6AF /* Deque-Systems-logo.jpg */,
 				8BDAD3521AA60A95009B3458 /* Info.plist */,
 				8BDAD3531AA60A95009B3458 /* main.m */,
 			);
@@ -210,7 +207,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BD9982E1AB0069A00DBA6AF /* Deque-Systems-logo.jpg in Resources */,
 				8BDAD35D1AA60A95009B3458 /* Main.storyboard in Resources */,
 				8BDAD3621AA60A95009B3458 /* LaunchScreen.xib in Resources */,
 				8BDAD35F1AA60A95009B3458 /* Images.xcassets in Resources */,
