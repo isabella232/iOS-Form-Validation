@@ -71,8 +71,11 @@
                                     <constraint firstItem="hAo-fy-SlV" firstAttribute="width" secondItem="SSY-0m-fk1" secondAttribute="width" id="yiI-Je-UX5"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="Deque-Systems-logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7bT-GW-E21">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="7bT-GW-E21">
                                 <rect key="frame" x="66" y="20" width="468" height="184"/>
+                                <accessibility key="accessibilityConfiguration" label="Logo, Deque Systems">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="7bT-GW-E21" secondAttribute="height" multiplier="718:283" id="t0d-s3-VkC"/>
                                 </constraints>
@@ -327,6 +330,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Deque-Systems-logo.jpg" width="717" height="283"/>
+        <image name="DequeLogo" width="717" height="283"/>
     </resources>
 </document>

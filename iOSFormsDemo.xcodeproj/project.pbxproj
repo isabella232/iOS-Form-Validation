@@ -93,8 +93,8 @@
 				8BDAD3581AA60A95009B3458 /* ViewController.h */,
 				8BDAD3591AA60A95009B3458 /* ViewController.m */,
 				8BDAD35B1AA60A95009B3458 /* Main.storyboard */,
-				8BDAD35E1AA60A95009B3458 /* Images.xcassets */,
 				8BDAD3601AA60A95009B3458 /* LaunchScreen.xib */,
+				8BDAD35E1AA60A95009B3458 /* Images.xcassets */,
 				8BDAD3511AA60A95009B3458 /* Supporting Files */,
 			);
 			path = iOSFormsDemo;

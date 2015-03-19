@@ -50,7 +50,7 @@
     // first field that is wrong will be the one that ends up with voiceover focusing on
     // it.
     
-    BOOL isValid = [datePredicate evaluateWithObject:dateFieldString];
+
     
     // if date string is empty, notify user that field is required
     if([dateFieldString isEqualToString:@""]) {
@@ -59,7 +59,7 @@
         [_dateReq setHidden:NO];
         UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, _dateField);
     }
-    else if(!isValid) {
+    else if(![datePredicate evaluateWithObject:dateFieldString]) {
         // set accessibility hint to nothing and label to more verbose, descriptive label
         _dateField.accessibilityHint = NULL;
         _dateField.accessibilityLabel = @"Date, m m / d d / y y y y, please enter a valid date.";
@@ -76,7 +76,6 @@
         [_dateReq setHidden:YES];
     }
     
-    isValid = [emailPredicate evaluateWithObject:emailFieldString];
     
     // if email string is empty, notify user that the field is required
     if([emailFieldString isEqualToString:@""]) {
@@ -85,7 +84,7 @@
         [_emailReq setHidden:NO];
         UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, _emailField);
     }
-    else if(!isValid) {
+    else if(![emailPredicate evaluateWithObject:emailFieldString]) {
         // set accessibility hint to nothing and label to more verbose, descriptive label
         _emailField.accessibilityHint = NULL;
         _emailField.accessibilityLabel = @"Email, please enter a valid email.";
@@ -103,8 +102,7 @@
     }
     
     // check if name input is valid (of the form 'FirstName LastName')
-    isValid = [namePredicate evaluateWithObject:nameFieldString];
-    if(!isValid) {
+    if(![namePredicate evaluateWithObject:nameFieldString]) {
         // set accessibility hint to nothing and label to a more verbose, descriptive label
         _nameField.accessibilityHint = NULL;
         _nameField.accessibilityLabel = @"Name, this field is required.";
