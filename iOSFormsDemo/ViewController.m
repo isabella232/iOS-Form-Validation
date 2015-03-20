@@ -19,6 +19,7 @@
     _dateField.delegate = self;
     _nameField.delegate = self;
     _emailField.delegate = self;
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

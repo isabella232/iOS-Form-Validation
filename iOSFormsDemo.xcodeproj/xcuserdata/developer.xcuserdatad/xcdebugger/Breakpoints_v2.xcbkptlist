@@ -10,28 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSFormsDemo/ViewController.m"
-            timestampString = "447194605.85551"
+            timestampString = "448572336.795391"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "-submitButton:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iOSFormsDemoTests/iOSFormsViewController.m"
-            timestampString = "448222272.720034"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "-testLabelsOnStartup"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,176 +26,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSFormsDemoTests/iOSFormsViewController.m"
-            timestampString = "448222272.720034"
+            timestampString = "448573860.466536"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "-testRegex"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[iOSFormsViewController testRegex]"
-                  moduleName = "iOSFormsDemoTests"
-                  urlString = "file:///Users/developer/Desktop/iOSFormsDemo/iOSFormsDemoTests/iOSFormsViewController.m"
-                  timestampString = "447621363.189391"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "338">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[iOSFormsViewController testRegex]"
-                  moduleName = "iOSFormsDemoTests"
-                  urlString = "file:///Users/developer/Desktop/iOSFormsDemo/iOSFormsDemoTests/iOSFormsViewController.m"
-                  timestampString = "447621363.189766"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "899">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[iOSFormsViewController testRegex]"
-                  moduleName = "iOSFormsDemoTests"
-                  urlString = "file:///Users/developer/Desktop/iOSFormsDemo/iOSFormsDemoTests/iOSFormsViewController.m"
-                  timestampString = "447621363.190034"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "1350">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[iOSFormsViewController testRegex]"
-                  moduleName = "iOSFormsDemoTests"
-                  urlString = "file:///Users/developer/Desktop/iOSFormsDemo/iOSFormsDemoTests/iOSFormsViewController.m"
-                  timestampString = "447621363.190356"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "1459">
-               </Location>
-            </Locations>
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "@implementation iOSFormsViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSFormsDemoTests/iOSFormsViewController.m"
-            timestampString = "448222272.720034"
+            timestampString = "448573107.762228"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "-testLabelsOnStartup"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[iOSFormsViewController testLabelsOnStartup]"
-                  moduleName = "iOSFormsDemoTests"
-                  urlString = "file:///Users/developer/Desktop/iOSFormsDemo/iOSFormsDemoTests/iOSFormsViewController.m"
-                  timestampString = "447620520.845512"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[iOSFormsViewController testLabelsOnStartup]"
-                  moduleName = "iOSFormsDemoTests"
-                  urlString = "file:///Users/developer/Desktop/iOSFormsDemo/iOSFormsDemoTests/iOSFormsViewController.m"
-                  timestampString = "447620520.845828"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "512">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[iOSFormsViewController testLabelsOnStartup]"
-                  moduleName = "iOSFormsDemoTests"
-                  urlString = "file:///Users/developer/Desktop/iOSFormsDemo/iOSFormsDemoTests/iOSFormsViewController.m"
-                  timestampString = "447620520.846082"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "940">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[iOSFormsViewController testLabelsOnStartup]"
-                  moduleName = "iOSFormsDemoTests"
-                  urlString = "file:///Users/developer/Desktop/iOSFormsDemo/iOSFormsDemoTests/iOSFormsViewController.m"
-                  timestampString = "447620520.846307"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "1020">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iOSFormsDemoTests/iOSFormsViewController.m"
-            timestampString = "448222272.720034"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "-testLabelsOnStartup"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "-setUp"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSFormsDemoTests/iOSFormsViewController.m"
-            timestampString = "448222272.720034"
+            timestampString = "448573148.51201"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "-testLabelsOnStartup"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "-setUp"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSFormsDemoTests/iOSFormsViewController.m"
+            timestampString = "448573156.414022"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "-setUp"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSFormsDemoTests/iOSFormsViewController.m"
+            timestampString = "448573210.543895"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "-setUp"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
