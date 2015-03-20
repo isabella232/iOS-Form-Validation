@@ -50,7 +50,7 @@
 }
 
 -(void)testAccessibilityLabelsAndHintsOnStartup {
-
+    //Tet to make sure accessibility labels and hints are the correct values upon startup of the app
     NSString *stdHint = @"This field is required";
     NSString *stdDateHint = @"m m / d d / y y y y, this field is required";
     XCTAssert([self.controller.emailField.accessibilityHint isEqualToString:stdHint]);
@@ -61,21 +61,42 @@
     XCTAssert([self.controller.emailField.accessibilityLabel isEqualToString:@"Email"]);
 }
 
-/*- (void)testRegex {
-    NSString *stdLabel =@"This field is required";
-    ViewController *testController;
+- (void)testRegex {
+    NSString *stdLabel = @"This field is required.";
+    
+    //Test regex error checking when empty strings are input:
+    
+    self.controller.emailField.text = @"";
+    self.controller.nameField.text = @"";
+    self.controller.dateField.text = @"";
+    [self.controller submitButton:self];
+    XCTAssertFalse([self.controller.emailReq isHidden]);
+    XCTAssert([self.controller.emailReq.text isEqualToString:stdLabel]);
+    XCTAssert([self.controller.dateReq.text isEqualToString:stdLabel]);
+    XCTAssertFalse([self.controller.dateReq isHidden]);
+    XCTAssert([self.controller.nameReq.text isEqualToString:stdLabel]);
+    XCTAssertFalse([self.controller.nameReq isHidden]);
+    
+    //Test regex error checking when valid strings are input:
+    
+    NSString *validEmail1 = @"valid@example.com";
+    NSString *validName1 = @"valid example";
+    NSString *validDate1 = @"11/11/2014";
+    
+    self.controller.emailField.text = validEmail1;
+    self.controller.nameField.text = validName1;
+    self.controller.dateField.text = validDate1;
+    
+    [self.controller submitButton:self];
+    
+    XCTAssertTrue([self.controller.emailReq isHidden]);
+    XCTAssert([self.controller.emailReq.text isEqualToString:stdLabel]);
+    XCTAssert([self.controller.dateReq.text isEqualToString:stdLabel]);
+    XCTAssertTrue([self.controller.dateReq isHidden]);
+    XCTAssert([self.controller.nameReq.text isEqualToString:stdLabel]);
+    XCTAssertTrue([self.controller.nameReq isHidden]);
     
     
-    testController.emailField.text = @"";
-    testController.nameField.text = @"";
-    testController.dateField.text = @"";
-    XCTAssert([.emailReq.text isEqualToString:stdLabel]);
-    XCTAssert(![testController.emailReq isHidden]);
-    XCTAssert([testController.dateReq.text isEqualToString:stdLabel]);
-    XCTAssert(![testController.dateReq isHidden]);
-    XCTAssert([testController.nameReq.text isEqualToString:stdLabel]);
-    XCTAssert(![testController.nameReq isHidden]);
-
     
     return;
 }
@@ -85,6 +106,6 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
-}*/
+}
 
 @end
