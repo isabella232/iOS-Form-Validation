@@ -48,9 +48,9 @@
 
 <p>Before we submit the forms we have the following setup:</p>
 
-<p><img src="http://s6.postimg.org/m7enaexdt/presubmission.png" alt="A screenshot of an iOS Application with a basic form.  Deque Logo at the top, with 3 text fields for name, email address and date.  A submit button at the bottom."></p>
+<p><img src="http://s6.postimg.org/m7enaexdt/presubmission.png" alt="A screenshot of an iOS Application with a basic form prior to submission.  Deque Logo at the top, with 3 text fields for name, email address and date.  A submit button at the bottom."></p>
 
-<p>State of app prior to form submission.The most obvious change from the standard approach is the light grey background. The traditional thin rounded border is difficult for users with mild sight impairments to see. By providing UITextFields a light grey background we ensure the bounds are easy to spot.</p>
+<p>The most obvious change from the standard approach is the light grey background. The traditional thin rounded border is difficult for users with mild sight impairments to see. By providing UITextFields a light grey background we ensure the bounds are easy to spot.</p>
 
 <p>Then notice how we have the “Name:” field set up. If you look at our story board files, you should see that the AccessibilityLabel is set to “Name” (thus avoiding the readout of the “:”) and the hint is set up to read “This field is required.” In VoiceOver the entire UITextField, when focused, should announced like this:</p>
 
@@ -80,7 +80,7 @@
 
 <p><img src="http://s6.postimg.org/rg9o8afsx/postsubmission.png" alt="An image of an iOS View, the same view as in the other image, but after unsuccessful form submission.  Deque logo at the top, with three text entry fields, denoting space for name, email adress, and date.  There are error messages in red text below each field, because the text fields were left empty."></p>
 
-<p>State of app after unsuccessful form submission.From a visual standpoint, obviously things have changed. We now see error messages below the UITextFields. However, what is more important is what happens with VoiceOver turned on.</p>
+<p>From a visual standpoint, obviously things have changed. We now see error messages below the UITextFields. However, what is more important is what happens with VoiceOver turned on.</p>
 
 <p>First, let’s talk about the easy stuff. That is, removing the hints, and placing the text that was in the hint, directly into the label. So, if VoiceOver’s original read out for the Name field was this:</p>
 
