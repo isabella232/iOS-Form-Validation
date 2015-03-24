@@ -71,15 +71,6 @@
                                     <constraint firstItem="hAo-fy-SlV" firstAttribute="width" secondItem="SSY-0m-fk1" secondAttribute="width" id="yiI-Je-UX5"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="7bT-GW-E21">
-                                <rect key="frame" x="66" y="20" width="468" height="184"/>
-                                <accessibility key="accessibilityConfiguration" label="Logo, Deque Systems">
-                                    <bool key="isElement" value="YES"/>
-                                </accessibility>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="7bT-GW-E21" secondAttribute="height" multiplier="718:283" id="t0d-s3-VkC"/>
-                                </constraints>
-                            </imageView>
                             <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="lV0-WU-wBE">
                                 <rect key="frame" x="17" y="401" width="566" height="66"/>
                                 <subviews>
@@ -176,7 +167,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0q7-oX-cHj">
                                         <rect key="frame" x="0.0" y="26" width="25" height="22"/>
                                         <accessibility key="accessibilityConfiguration" label="I would like to learn more about Deque">
-                                            <accessibilityTraits key="traits" none="YES" button="YES" link="YES"/>
+                                            <accessibilityTraits key="traits" none="YES" link="YES"/>
                                         </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="25" id="fy6-oW-y2M"/>
@@ -279,6 +270,15 @@
                                     <constraint firstAttribute="bottom" secondItem="xeH-ba-MOv" secondAttribute="bottom" constant="8" id="oLZ-us-RYl"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="7bT-GW-E21">
+                                <rect key="frame" x="66" y="20" width="468" height="184"/>
+                                <accessibility key="accessibilityConfiguration" label="Logo, Deque Systems">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7bT-GW-E21" secondAttribute="height" multiplier="718:283" id="t0d-s3-VkC"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                         <constraints>
@@ -319,6 +319,7 @@
                         <outlet property="dateReq" destination="Bu1-vh-jVF" id="HUR-Xr-d7h"/>
                         <outlet property="emailField" destination="aPX-Fc-04t" id="MRN-8x-MmC"/>
                         <outlet property="emailReq" destination="xeH-ba-MOv" id="3kO-pU-snN"/>
+                        <outlet property="iWouldLikeToLearnMoreLink" destination="0q7-oX-cHj" id="Dk4-ho-9XL"/>
                         <outlet property="logo" destination="7bT-GW-E21" id="v5p-kI-IDi"/>
                         <outlet property="nameField" destination="SSY-0m-fk1" id="hVs-AB-25p"/>
                         <outlet property="nameReq" destination="hAo-fy-SlV" id="2Mm-zl-i8W"/>

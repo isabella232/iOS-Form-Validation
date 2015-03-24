@@ -41,7 +41,7 @@
     
     NSPredicate *emailPredicate = [NSPredicate
                                predicateWithFormat:
-                               @"SELF MATCHES '[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}'"];
+                               @"SELF MATCHES '[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]+'"];
     NSPredicate *datePredicate = [NSPredicate
                                   predicateWithFormat:@"SELF MATCHES '[0-9]{1}[0-9]{1}[/]{1}[0-9]{1}[0-9]{1}[/]{1}[0-9]{1}[0-9]{1}[0-9]{1}[0-9]{1}'"];
     

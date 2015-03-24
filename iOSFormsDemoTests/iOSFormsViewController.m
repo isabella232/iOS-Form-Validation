@@ -96,8 +96,57 @@
     XCTAssertTrue([self.controller.nameReq isHidden]);
     
     
+    // Test Regex Error checking with invalid input. Will add more invalid
+    // cases, but for now this is fine.
+    
+    NSString *invalidEmail1 = @"invalidexample";
+    NSString *invalidName1 = @"invalid-example";
+    NSString *invalidDate1 = @"1/1/14";
+    NSString *dateFormattingIsWrongNotify = @"Format: mm/dd/yyyy";
+    NSString *emailFormattingIsWrongNotify = @"Please enter a valid email";
+    NSString *dateErrorAccessibilityLabel = @"Date, m m / d d / y y y y, please enter a valid date.";
+    NSString *emailErrorAccessibilityLabel = @"Email, please enter a valid email.";
+    NSString *nameErrorAccessibilityLabel = @"Name, this field is required.";
+    
+    self.controller.emailField.text = invalidEmail1;
+    self.controller.nameField.text = invalidName1;
+    self.controller.dateField.text = invalidDate1;
+    
+    [self.controller submitButton:self];
+    
+    XCTAssertTrue(![self.controller.emailReq isHidden]);
+    XCTAssert([self.controller.emailReq.text isEqualToString:emailFormattingIsWrongNotify]);
+    XCTAssert([self.controller.dateReq.text isEqualToString:dateFormattingIsWrongNotify]);
+    XCTAssertTrue(![self.controller.dateReq isHidden]);
+    XCTAssert([self.controller.nameReq.text isEqualToString:stdLabel]);
+    XCTAssertTrue(![self.controller.nameReq isHidden]);
+    
+    XCTAssertNil(self.controller.emailField.accessibilityHint );
+    XCTAssertNil(self.controller.nameField.accessibilityHint);
+    XCTAssertNil(self.controller.dateField.accessibilityHint);
+    XCTAssert([self.controller.dateField.accessibilityLabel isEqualToString:dateErrorAccessibilityLabel]);
+    XCTAssert([self.controller.nameField.accessibilityLabel isEqualToString:nameErrorAccessibilityLabel]);
+    XCTAssert([self.controller.emailField.accessibilityLabel isEqualToString:emailErrorAccessibilityLabel]);
+    
     
     return;
+}
+
+-(void)testImageAccessibility {
+    
+    /* CHRIS: I tried to see if there was a way to get the file that is
+     * loaded in the UIImageView in a test case, but it seems it's not
+     * possible. http://stackoverflow.com/questions/1740274/uiimageview-howto-get-the-file-name-of-the-image-assigned
+     * I could possibly create my own subclass of UIImageView with the
+     * filename stored, but that would be like reinventing the wheel...
+     * Let me know what you want me to do!
+     */
+    
+    XCTAssert([self.controller.logo.accessibilityLabel isEqualToString:@"Logo, Deque Systems"]);
+}
+
+-(void)testIWouldLikeToLearnMoreLink{
+    XCTAssert([self.controller.iWouldLikeToLearnMoreLink.accessibilityLabel isEqualToString:@"I would like to learn more about Deque"]);
 }
 
 - (void)testPerformanceExample {

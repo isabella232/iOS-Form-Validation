@@ -19,6 +19,7 @@
 - (IBAction)backgroundTap:(id)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *logo;
 - (IBAction)information:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *iWouldLikeToLearnMoreLink;
 
 
 @end
