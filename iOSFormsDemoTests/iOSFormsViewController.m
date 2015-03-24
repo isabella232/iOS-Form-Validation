@@ -15,7 +15,6 @@
 @property (strong, nonatomic) ViewController *controller;
 @end
 
-/* THESE TESTS DON'T WORK YET */
 
 @implementation iOSFormsViewController
 @synthesize controller = _controller;
