@@ -11,20 +11,23 @@
 #import "ViewController.h"
 #import "AppDelegate.h"
 
-@interface iOSFormsViewController : XCTestCase
+@interface iOSFormsViewControllerTests : XCTestCase
+
 @property (strong, nonatomic) ViewController *controller;
+
 @end
 
 
-@implementation iOSFormsViewController
+@implementation iOSFormsViewControllerTests
+
 @synthesize controller = _controller;
+
 - (void)setUp {
-    
-        [super setUp];
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        self.controller = [storyboard instantiateViewControllerWithIdentifier:@"main"];
-        [self.controller performSelectorOnMainThread:@selector(loadView) withObject:nil waitUntilDone:YES];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    // Mock view controller
+    [super setUp];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    self.controller = [storyboard instantiateViewControllerWithIdentifier:@"main"];
+    [self.controller performSelectorOnMainThread:@selector(loadView) withObject:nil waitUntilDone:YES];
 }
 
 - (void)tearDown {
@@ -32,12 +35,8 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssertTrue(YES, @"Pass");
-}
 
-- (void)testLabelsOnStartup {
+- (void)testVisualLabelsOnStartup {
     XCTAssert([self.controller view]);
     XCTAssert([self.controller emailReq]);
     XCTAssert([self.controller nameReq]);
@@ -78,13 +77,16 @@
     NSString *dateErrorAccessibilityLabel = @"Date, m m / d d / y y y y, please enter a valid date.";
     NSString *emailErrorAccessibilityLabel = @"Email, please enter a valid email.";
     NSString *nameErrorAccessibilityLabel = @"Name, this field is required.";
-    
+
+    // Input invalid strings
     self.controller.emailField.text = invalidEmail1;
     self.controller.nameField.text = invalidName1;
     self.controller.dateField.text = invalidDate1;
     
+    // submit
     [self.controller submitButton:self];
     
+    // Verify visual
     XCTAssertTrue(![self.controller.emailReq isHidden]);
     XCTAssert([self.controller.emailReq.text isEqualToString:emailFormattingIsWrongNotify]);
     XCTAssert([self.controller.dateReq.text isEqualToString:dateFormattingIsWrongNotify]);
@@ -92,6 +94,7 @@
     XCTAssert([self.controller.nameReq.text isEqualToString:stdLabel]);
     XCTAssertTrue(![self.controller.nameReq isHidden]);
     
+    // Verify accessibility
     XCTAssertNil(self.controller.emailField.accessibilityHint );
     XCTAssertNil(self.controller.nameField.accessibilityHint);
     XCTAssertNil(self.controller.dateField.accessibilityHint);
@@ -102,60 +105,93 @@
     return;
 }
 
--(void)testUserSubmitsNothing{
+-(void)testUserSubmitsNothing {
     
-    //Test regex error checking when empty strings are input:
+    // Test regex error checking when empty strings are input:
+    
+    // Standard visual label
     NSString *stdLabel = @"This field is required.";
     
+    // Input empty strings
     self.controller.emailField.text = @"";
     self.controller.nameField.text = @"";
     self.controller.dateField.text = @"";
     
+    // Submit
     [self.controller submitButton:self];
     
+    // Test visual
     XCTAssertFalse([self.controller.emailReq isHidden]);
     XCTAssert([self.controller.emailReq.text isEqualToString:stdLabel]);
     XCTAssert([self.controller.dateReq.text isEqualToString:stdLabel]);
     XCTAssertFalse([self.controller.dateReq isHidden]);
     XCTAssert([self.controller.nameReq.text isEqualToString:stdLabel]);
     XCTAssertFalse([self.controller.nameReq isHidden]);
+    
+    // Test accessibility
+    // Hints must be NULL
+    XCTAssertNil(self.controller.emailField.accessibilityHint );
+    XCTAssertNil(self.controller.nameField.accessibilityHint);
+    XCTAssertNil(self.controller.dateField.accessibilityHint);
+    
+    // Labels
+    XCTAssert([self.controller.dateField.accessibilityLabel isEqualToString:@"Date, m m / d d / y y y y, this field is required."]);
+    XCTAssert([self.controller.nameField.accessibilityLabel isEqualToString:@"Name, this field is required."]);
+    XCTAssert([self.controller.emailField.accessibilityLabel isEqualToString:@"Email, this field is required."]);
 }
 
--(void)testUserSubmitsValidStrings{
+-(void)testUserSubmitsValidStrings {
     //Test regex error checking when valid strings are input:
+    
+    // Standard label
     NSString *stdLabel = @"This field is required.";
     
+    // Valid strings
     NSString *validEmail1 = @"valid@example.com";
     NSString *validName1 = @"valid example";
     NSString *validDate1 = @"11/11/2014";
     
+    // Input invalid strings
     self.controller.emailField.text = validEmail1;
     self.controller.nameField.text = validName1;
     self.controller.dateField.text = validDate1;
     
+    // Submit
     [self.controller submitButton:self];
     
+    // Test visual
     XCTAssertTrue([self.controller.emailReq isHidden]);
     XCTAssert([self.controller.emailReq.text isEqualToString:stdLabel]);
     XCTAssert([self.controller.dateReq.text isEqualToString:stdLabel]);
     XCTAssertTrue([self.controller.dateReq isHidden]);
     XCTAssert([self.controller.nameReq.text isEqualToString:stdLabel]);
     XCTAssertTrue([self.controller.nameReq isHidden]);
+    
+    // Test accessibility
+    NSString *stdHint = @"This field is required";
+    NSString *stdDateHint = @"m m / d d / y y y y, this field is required";
+    
+    // Hints
+    XCTAssert([self.controller.emailField.accessibilityHint isEqualToString:stdHint]);
+    XCTAssert([self.controller.nameField.accessibilityHint isEqualToString:stdHint]);
+    XCTAssert([self.controller.dateField.accessibilityHint isEqualToString:stdDateHint]);
+    
+    // Labels
+    XCTAssert([self.controller.dateField.accessibilityLabel isEqualToString:@"Date"]);
+    XCTAssert([self.controller.nameField.accessibilityLabel isEqualToString:@"Name"]);
+    XCTAssert([self.controller.emailField.accessibilityLabel isEqualToString:@"Email"]);
 }
 
 -(void)testImageAccessibility {
     
-    /* CHRIS: I tried to see if there was a way to get the file that is
-     * loaded in the UIImageView in a test case, but it seems it's not
-     * possible. http://stackoverflow.com/questions/1740274/uiimageview-howto-get-the-file-name-of-the-image-assigned
-     * I could possibly create my own subclass of UIImageView with the
-     * filename stored, but that would be like reinventing the wheel...
-     * Let me know what you want me to do!
-     */
+    // Check to see that the correct image is actually being displayed in the UIImageView
     UIImage* checkImage = [UIImage imageNamed:@"DequeLogo"];
     NSData *checkImageData = UIImagePNGRepresentation(checkImage);
     XCTAssert([checkImageData isEqualToData:UIImagePNGRepresentation(self.controller.logo.image)]);
+    
+    // Check to make sure its accessibility label is the correct one for the image displayed.
     XCTAssert([self.controller.logo.accessibilityLabel isEqualToString:@"Logo, Deque Systems"]);
+    
 }
 
 
