@@ -1,2 +1,3 @@
 iOSFormsDemo.xcodeproj/project.xcworkspace/xcuserdata
-*.DS_Store
+.DS_Store
+UserInterfaceState.xcuserstate
