@@ -3,7 +3,7 @@
 //  DequeApp
 //
 //  Created by Alistair Barrell on 2/27/15.
-//  Copyright (c) 2015. All rights reserved.
+//  Copyright (c) Deque Systems 2015. All rights reserved.
 //
 #import "regex.h"
 #import "ViewController.h"
@@ -19,6 +19,7 @@
     _dateField.delegate = self;
     _nameField.delegate = self;
     _emailField.delegate = self;
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -40,7 +41,7 @@
     
     NSPredicate *emailPredicate = [NSPredicate
                                predicateWithFormat:
-                               @"SELF MATCHES '[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}'"];
+                               @"SELF MATCHES '[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]+'"];
     NSPredicate *datePredicate = [NSPredicate
                                   predicateWithFormat:@"SELF MATCHES '[0-9]{1}[0-9]{1}[/]{1}[0-9]{1}[0-9]{1}[/]{1}[0-9]{1}[0-9]{1}[0-9]{1}[0-9]{1}'"];
     
