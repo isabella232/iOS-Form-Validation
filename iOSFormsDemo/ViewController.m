@@ -3,7 +3,7 @@
 //  DequeApp
 //
 //  Created by Alistair Barrell on 2/27/15.
-//  Copyright (c) 2015. All rights reserved.
+//  Copyright (c) Deque Systems 2015. All rights reserved.
 //
 #import "regex.h"
 #import "ViewController.h"

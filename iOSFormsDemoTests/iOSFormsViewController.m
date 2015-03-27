@@ -2,8 +2,8 @@
 //  iOSFormsViewController.m
 //  iOSFormsDemo
 //
-//  Created by Deque Developer on 3/5/15.
-//  Copyright (c) 2015 Deque Developer. All rights reserved.
+//  Created by Alistair Barrell on 3/5/15.
+//  Copyright (c) 2015 Deque Systems. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -52,6 +52,7 @@
     //Tet to make sure accessibility labels and hints are the correct values upon startup of the app
     NSString *stdHint = @"This field is required";
     NSString *stdDateHint = @"m m / d d / y y y y, this field is required";
+    
     XCTAssert([self.controller.emailField.accessibilityHint isEqualToString:stdHint]);
     XCTAssert([self.controller.nameField.accessibilityHint isEqualToString:stdHint]);
     XCTAssert([self.controller.dateField.accessibilityHint isEqualToString:stdDateHint]);
@@ -68,7 +69,9 @@
     self.controller.emailField.text = @"";
     self.controller.nameField.text = @"";
     self.controller.dateField.text = @"";
+    
     [self.controller submitButton:self];
+    
     XCTAssertFalse([self.controller.emailReq isHidden]);
     XCTAssert([self.controller.emailReq.text isEqualToString:stdLabel]);
     XCTAssert([self.controller.dateReq.text isEqualToString:stdLabel]);
@@ -127,7 +130,6 @@
     XCTAssert([self.controller.dateField.accessibilityLabel isEqualToString:dateErrorAccessibilityLabel]);
     XCTAssert([self.controller.nameField.accessibilityLabel isEqualToString:nameErrorAccessibilityLabel]);
     XCTAssert([self.controller.emailField.accessibilityLabel isEqualToString:emailErrorAccessibilityLabel]);
-    
     
     return;
 }

@@ -2,8 +2,8 @@
 //  ViewController.h
 //  DequeApp
 //
-//  Created by Deque Developer on 2/27/15.
-//  Copyright (c) 2015 Deque Developer. All rights reserved.
+//  Created by Alistair Barrell on 2/27/15.
+//  Copyright (c) Deque Systems 2015. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
