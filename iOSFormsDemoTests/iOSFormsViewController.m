@@ -143,7 +143,9 @@
      * filename stored, but that would be like reinventing the wheel...
      * Let me know what you want me to do!
      */
-    
+    UIImage* checkImage = [UIImage imageNamed:@"DequeLogo"];
+    NSData *checkImageData = UIImagePNGRepresentation(checkImage);
+    XCTAssert([checkImageData isEqualToData:UIImagePNGRepresentation(self.controller.logo.image)]);
     XCTAssert([self.controller.logo.accessibilityLabel isEqualToString:@"Logo, Deque Systems"]);
 }
 
