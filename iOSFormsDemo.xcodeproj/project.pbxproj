@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FD92C401ACDA61C007E1BAE /* IFVBadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD92C3F1ACDA61C007E1BAE /* IFVBadViewController.m */; };
+		0FD92C451ACDC93D007E1BAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FD92C441ACDC93D007E1BAE /* Localizable.strings */; };
 		8BCCB31A1AA63A13006C6AE0 /* DQAccessibitylTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCCB3191AA63A13006C6AE0 /* DQAccessibitylTextField.m */; };
 		8BD998091AA8BAAF00DBA6AF /* iOSFormsViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD998081AA8BAAF00DBA6AF /* iOSFormsViewControllerTests.m */; };
 		8BDAD3541AA60A95009B3458 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD3531AA60A95009B3458 /* main.m */; };
 		8BDAD3571AA60A95009B3458 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD3561AA60A95009B3458 /* AppDelegate.m */; };
-		8BDAD35A1AA60A95009B3458 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD3591AA60A95009B3458 /* ViewController.m */; };
+		8BDAD35A1AA60A95009B3458 /* IFVBestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD3591AA60A95009B3458 /* IFVBestViewController.m */; };
 		8BDAD35D1AA60A95009B3458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDAD35B1AA60A95009B3458 /* Main.storyboard */; };
 		8BDAD35F1AA60A95009B3458 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BDAD35E1AA60A95009B3458 /* Images.xcassets */; };
 		8BDAD3621AA60A95009B3458 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDAD3601AA60A95009B3458 /* LaunchScreen.xib */; };
@@ -29,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FD92C3E1ACDA61C007E1BAE /* IFVBadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFVBadViewController.h; sourceTree = "<group>"; };
+		0FD92C3F1ACDA61C007E1BAE /* IFVBadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBadViewController.m; sourceTree = "<group>"; };
+		0FD92C441ACDC93D007E1BAE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		8BCCB3181AA63A13006C6AE0 /* DQAccessibitylTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQAccessibitylTextField.h; sourceTree = "<group>"; };
 		8BCCB3191AA63A13006C6AE0 /* DQAccessibitylTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQAccessibitylTextField.m; sourceTree = "<group>"; };
 		8BD998081AA8BAAF00DBA6AF /* iOSFormsViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSFormsViewControllerTests.m; sourceTree = "<group>"; };
@@ -37,8 +42,8 @@
 		8BDAD3531AA60A95009B3458 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BDAD3551AA60A95009B3458 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8BDAD3561AA60A95009B3458 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8BDAD3581AA60A95009B3458 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8BDAD3591AA60A95009B3458 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8BDAD3581AA60A95009B3458 /* IFVBestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFVBestViewController.h; sourceTree = "<group>"; };
+		8BDAD3591AA60A95009B3458 /* IFVBestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFVBestViewController.m; sourceTree = "<group>"; };
 		8BDAD35C1AA60A95009B3458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BDAD35E1AA60A95009B3458 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8BDAD3611AA60A95009B3458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -65,6 +70,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FD92C3D1ACD9FBA007E1BAE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8BDAD3581AA60A95009B3458 /* IFVBestViewController.h */,
+				8BDAD3591AA60A95009B3458 /* IFVBestViewController.m */,
+				0FD92C3E1ACDA61C007E1BAE /* IFVBadViewController.h */,
+				0FD92C3F1ACDA61C007E1BAE /* IFVBadViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		8BDAD3451AA60A94009B3458 = {
 			isa = PBXGroup;
 			children = (
@@ -90,11 +106,9 @@
 				8BCCB3191AA63A13006C6AE0 /* DQAccessibitylTextField.m */,
 				8BDAD3551AA60A95009B3458 /* AppDelegate.h */,
 				8BDAD3561AA60A95009B3458 /* AppDelegate.m */,
-				8BDAD3581AA60A95009B3458 /* ViewController.h */,
-				8BDAD3591AA60A95009B3458 /* ViewController.m */,
 				8BDAD35B1AA60A95009B3458 /* Main.storyboard */,
 				8BDAD3601AA60A95009B3458 /* LaunchScreen.xib */,
-				8BDAD35E1AA60A95009B3458 /* Images.xcassets */,
+				0FD92C3D1ACD9FBA007E1BAE /* ViewControllers */,
 				8BDAD3511AA60A95009B3458 /* Supporting Files */,
 			);
 			path = iOSFormsDemo;
@@ -103,8 +117,10 @@
 		8BDAD3511AA60A95009B3458 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8BDAD35E1AA60A95009B3458 /* Images.xcassets */,
 				8BDAD3521AA60A95009B3458 /* Info.plist */,
 				8BDAD3531AA60A95009B3458 /* main.m */,
+				0FD92C441ACDC93D007E1BAE /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -208,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BDAD35D1AA60A95009B3458 /* Main.storyboard in Resources */,
+				0FD92C451ACDC93D007E1BAE /* Localizable.strings in Resources */,
 				8BDAD3621AA60A95009B3458 /* LaunchScreen.xib in Resources */,
 				8BDAD35F1AA60A95009B3458 /* Images.xcassets in Resources */,
 			);
@@ -227,9 +244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BDAD35A1AA60A95009B3458 /* ViewController.m in Sources */,
+				8BDAD35A1AA60A95009B3458 /* IFVBestViewController.m in Sources */,
 				8BCCB31A1AA63A13006C6AE0 /* DQAccessibitylTextField.m in Sources */,
 				8BDAD3571AA60A95009B3458 /* AppDelegate.m in Sources */,
+				0FD92C401ACDA61C007E1BAE /* IFVBadViewController.m in Sources */,
 				8BDAD3541AA60A95009B3458 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  iOSFormsDemo
+
+  Created by Chris McMeeking on 4/2/15.
+  Copyright (c) 2015 Deque Developer. All rights reserved.
+*/
+
+"VALIDATION_ERROR_NAME_FORMAT" = "Can only contain letters and numbers.";
+
+"VALIDATION_ERROR_DATE_FORMAT" = "Required format mm/dd/yyyy.";
+"VALIDATION_ERROR_DATE_FORMAT_A11Y" = "Required format m m / d d / y y y y.";
+
+"VALIDATION_ERROR_EMAIL_FORMAT" = "Please enter a valid email.";
+
+"VALIDATION_ERROR_MISSING" = "This field is required.";
+
+"DATE_FORMAT" = "mm/dd/yyyy";
+
+"DATE_FORMAT_A11Y" = "m m / d d / y y y y";
+
+"PREDICATE_STRING_NAME" = "SELF MATCHES '[A-Za-z0-9 ]+'";
+
+"PREDICATE_STRING_DATE" = "SELF MATCHES '[0-9]{1}[0-9]{1}[/]{1}[0-9]{1}[0-9]{1}[/]{1}[0-9]{1}[0-9]{1}[0-9]{1}[0-9]{1}'";
+
+"PREDICATE_STRING_EMAIL" = "SELF MATCHES '[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]+'";
