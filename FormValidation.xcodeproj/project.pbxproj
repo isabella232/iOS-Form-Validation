@@ -7,17 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F3C9D901AD0E91000D1FE9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDAD35B1AA60A95009B3458 /* Main.storyboard */; };
+		0F3C9D911AD0E91300D1FE9F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDAD3601AA60A95009B3458 /* LaunchScreen.xib */; };
 		0FD92C401ACDA61C007E1BAE /* IFVBadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD92C3F1ACDA61C007E1BAE /* IFVBadViewController.m */; };
 		0FD92C451ACDC93D007E1BAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FD92C441ACDC93D007E1BAE /* Localizable.strings */; };
-		8BCCB31A1AA63A13006C6AE0 /* DQAccessibitylTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCCB3191AA63A13006C6AE0 /* DQAccessibitylTextField.m */; };
-		8BD998091AA8BAAF00DBA6AF /* iOSFormsViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD998081AA8BAAF00DBA6AF /* iOSFormsViewControllerTests.m */; };
+		8BD998091AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD998081AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m */; };
 		8BDAD3541AA60A95009B3458 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD3531AA60A95009B3458 /* main.m */; };
 		8BDAD3571AA60A95009B3458 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD3561AA60A95009B3458 /* AppDelegate.m */; };
 		8BDAD35A1AA60A95009B3458 /* IFVBestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD3591AA60A95009B3458 /* IFVBestViewController.m */; };
-		8BDAD35D1AA60A95009B3458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDAD35B1AA60A95009B3458 /* Main.storyboard */; };
 		8BDAD35F1AA60A95009B3458 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BDAD35E1AA60A95009B3458 /* Images.xcassets */; };
-		8BDAD3621AA60A95009B3458 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDAD3601AA60A95009B3458 /* LaunchScreen.xib */; };
-		8BDAD36E1AA60A95009B3458 /* iOSFormsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD36D1AA60A95009B3458 /* iOSFormsDemoTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +32,8 @@
 		0FD92C3E1ACDA61C007E1BAE /* IFVBadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFVBadViewController.h; sourceTree = "<group>"; };
 		0FD92C3F1ACDA61C007E1BAE /* IFVBadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBadViewController.m; sourceTree = "<group>"; };
 		0FD92C441ACDC93D007E1BAE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		8BCCB3181AA63A13006C6AE0 /* DQAccessibitylTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQAccessibitylTextField.h; sourceTree = "<group>"; };
-		8BCCB3191AA63A13006C6AE0 /* DQAccessibitylTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQAccessibitylTextField.m; sourceTree = "<group>"; };
-		8BD998081AA8BAAF00DBA6AF /* iOSFormsViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSFormsViewControllerTests.m; sourceTree = "<group>"; };
-		8BDAD34E1AA60A95009B3458 /* iOSFormsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSFormsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD998081AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBestViewControllerTests.m; sourceTree = "<group>"; };
+		8BDAD34E1AA60A95009B3458 /* FormValidation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormValidation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDAD3521AA60A95009B3458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BDAD3531AA60A95009B3458 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BDAD3551AA60A95009B3458 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,9 +43,8 @@
 		8BDAD35C1AA60A95009B3458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BDAD35E1AA60A95009B3458 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8BDAD3611AA60A95009B3458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		8BDAD3671AA60A95009B3458 /* iOSFormsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSFormsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BDAD3671AA60A95009B3458 /* FormValidationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormValidationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDAD36C1AA60A95009B3458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BDAD36D1AA60A95009B3458 /* iOSFormsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSFormsDemoTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +79,8 @@
 		8BDAD3451AA60A94009B3458 = {
 			isa = PBXGroup;
 			children = (
-				8BDAD3501AA60A95009B3458 /* iOSFormsDemo */,
-				8BDAD36A1AA60A95009B3458 /* iOSFormsDemoTests */,
+				8BDAD3501AA60A95009B3458 /* FormValidation */,
+				8BDAD36A1AA60A95009B3458 /* FormValidationTests */,
 				8BDAD34F1AA60A95009B3458 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,17 +88,15 @@
 		8BDAD34F1AA60A95009B3458 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BDAD34E1AA60A95009B3458 /* iOSFormsDemo.app */,
-				8BDAD3671AA60A95009B3458 /* iOSFormsDemoTests.xctest */,
+				8BDAD34E1AA60A95009B3458 /* FormValidation.app */,
+				8BDAD3671AA60A95009B3458 /* FormValidationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8BDAD3501AA60A95009B3458 /* iOSFormsDemo */ = {
+		8BDAD3501AA60A95009B3458 /* FormValidation */ = {
 			isa = PBXGroup;
 			children = (
-				8BCCB3181AA63A13006C6AE0 /* DQAccessibitylTextField.h */,
-				8BCCB3191AA63A13006C6AE0 /* DQAccessibitylTextField.m */,
 				8BDAD3551AA60A95009B3458 /* AppDelegate.h */,
 				8BDAD3561AA60A95009B3458 /* AppDelegate.m */,
 				8BDAD35B1AA60A95009B3458 /* Main.storyboard */,
@@ -111,6 +104,7 @@
 				0FD92C3D1ACD9FBA007E1BAE /* ViewControllers */,
 				8BDAD3511AA60A95009B3458 /* Supporting Files */,
 			);
+			name = FormValidation;
 			path = iOSFormsDemo;
 			sourceTree = "<group>";
 		};
@@ -125,13 +119,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8BDAD36A1AA60A95009B3458 /* iOSFormsDemoTests */ = {
+		8BDAD36A1AA60A95009B3458 /* FormValidationTests */ = {
 			isa = PBXGroup;
 			children = (
-				8BDAD36D1AA60A95009B3458 /* iOSFormsDemoTests.m */,
-				8BD998081AA8BAAF00DBA6AF /* iOSFormsViewControllerTests.m */,
+				8BD998081AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m */,
 				8BDAD36B1AA60A95009B3458 /* Supporting Files */,
 			);
+			name = FormValidationTests;
 			path = iOSFormsDemoTests;
 			sourceTree = "<group>";
 		};
@@ -146,9 +140,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8BDAD34D1AA60A95009B3458 /* iOSFormsDemo */ = {
+		8BDAD34D1AA60A95009B3458 /* FormValidation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BDAD3711AA60A95009B3458 /* Build configuration list for PBXNativeTarget "iOSFormsDemo" */;
+			buildConfigurationList = 8BDAD3711AA60A95009B3458 /* Build configuration list for PBXNativeTarget "FormValidation" */;
 			buildPhases = (
 				8BDAD34A1AA60A95009B3458 /* Sources */,
 				8BDAD34B1AA60A95009B3458 /* Frameworks */,
@@ -158,14 +152,14 @@
 			);
 			dependencies = (
 			);
-			name = iOSFormsDemo;
+			name = FormValidation;
 			productName = iOSFormsDemo;
-			productReference = 8BDAD34E1AA60A95009B3458 /* iOSFormsDemo.app */;
+			productReference = 8BDAD34E1AA60A95009B3458 /* FormValidation.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8BDAD3661AA60A95009B3458 /* iOSFormsDemoTests */ = {
+		8BDAD3661AA60A95009B3458 /* FormValidationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BDAD3741AA60A95009B3458 /* Build configuration list for PBXNativeTarget "iOSFormsDemoTests" */;
+			buildConfigurationList = 8BDAD3741AA60A95009B3458 /* Build configuration list for PBXNativeTarget "FormValidationTests" */;
 			buildPhases = (
 				8BDAD3631AA60A95009B3458 /* Sources */,
 				8BDAD3641AA60A95009B3458 /* Frameworks */,
@@ -176,9 +170,9 @@
 			dependencies = (
 				8BDAD3691AA60A95009B3458 /* PBXTargetDependency */,
 			);
-			name = iOSFormsDemoTests;
+			name = FormValidationTests;
 			productName = iOSFormsDemoTests;
-			productReference = 8BDAD3671AA60A95009B3458 /* iOSFormsDemoTests.xctest */;
+			productReference = 8BDAD3671AA60A95009B3458 /* FormValidationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -199,7 +193,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8BDAD3491AA60A94009B3458 /* Build configuration list for PBXProject "iOSFormsDemo" */;
+			buildConfigurationList = 8BDAD3491AA60A94009B3458 /* Build configuration list for PBXProject "FormValidation" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -212,8 +206,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8BDAD34D1AA60A95009B3458 /* iOSFormsDemo */,
-				8BDAD3661AA60A95009B3458 /* iOSFormsDemoTests */,
+				8BDAD34D1AA60A95009B3458 /* FormValidation */,
+				8BDAD3661AA60A95009B3458 /* FormValidationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -223,9 +217,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BDAD35D1AA60A95009B3458 /* Main.storyboard in Resources */,
+				0F3C9D911AD0E91300D1FE9F /* LaunchScreen.xib in Resources */,
+				0F3C9D901AD0E91000D1FE9F /* Main.storyboard in Resources */,
 				0FD92C451ACDC93D007E1BAE /* Localizable.strings in Resources */,
-				8BDAD3621AA60A95009B3458 /* LaunchScreen.xib in Resources */,
 				8BDAD35F1AA60A95009B3458 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,7 +239,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BDAD35A1AA60A95009B3458 /* IFVBestViewController.m in Sources */,
-				8BCCB31A1AA63A13006C6AE0 /* DQAccessibitylTextField.m in Sources */,
 				8BDAD3571AA60A95009B3458 /* AppDelegate.m in Sources */,
 				0FD92C401ACDA61C007E1BAE /* IFVBadViewController.m in Sources */,
 				8BDAD3541AA60A95009B3458 /* main.m in Sources */,
@@ -256,8 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BD998091AA8BAAF00DBA6AF /* iOSFormsViewControllerTests.m in Sources */,
-				8BDAD36E1AA60A95009B3458 /* iOSFormsDemoTests.m in Sources */,
+				8BD998091AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +258,7 @@
 /* Begin PBXTargetDependency section */
 		8BDAD3691AA60A95009B3458 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8BDAD34D1AA60A95009B3458 /* iOSFormsDemo */;
+			target = 8BDAD34D1AA60A95009B3458 /* FormValidation */;
 			targetProxy = 8BDAD3681AA60A95009B3458 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -375,7 +367,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSFormsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FormValidation;
 			};
 			name = Debug;
 		};
@@ -385,7 +377,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSFormsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FormValidation;
 			};
 			name = Release;
 		};
@@ -403,8 +395,8 @@
 				);
 				INFOPLIST_FILE = iOSFormsDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSFormsDemo.app/iOSFormsDemo";
+				PRODUCT_NAME = FormValidationTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FormValidation.app/FormValidation";
 			};
 			name = Debug;
 		};
@@ -418,15 +410,15 @@
 				);
 				INFOPLIST_FILE = iOSFormsDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSFormsDemo.app/iOSFormsDemo";
+				PRODUCT_NAME = FormValidationTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FormValidation.app/FormValidation";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8BDAD3491AA60A94009B3458 /* Build configuration list for PBXProject "iOSFormsDemo" */ = {
+		8BDAD3491AA60A94009B3458 /* Build configuration list for PBXProject "FormValidation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BDAD36F1AA60A95009B3458 /* Debug */,
@@ -435,7 +427,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BDAD3711AA60A95009B3458 /* Build configuration list for PBXNativeTarget "iOSFormsDemo" */ = {
+		8BDAD3711AA60A95009B3458 /* Build configuration list for PBXNativeTarget "FormValidation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BDAD3721AA60A95009B3458 /* Debug */,
@@ -444,7 +436,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BDAD3741AA60A95009B3458 /* Build configuration list for PBXNativeTarget "iOSFormsDemoTests" */ = {
+		8BDAD3741AA60A95009B3458 /* Build configuration list for PBXNativeTarget "FormValidationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BDAD3751AA60A95009B3458 /* Debug */,
