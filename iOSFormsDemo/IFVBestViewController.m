@@ -23,7 +23,6 @@
     
     _emailField.accessibilityHint = NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil);
     _nameField.accessibilityHint = NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil);
-    
 }
 
 - (IBAction)submitButton:(id)sender {
@@ -99,7 +98,17 @@
 }
 
 - (IBAction)information:(id)sender {
-     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.deque.com"]];
+    UIViewController* modalViewControlelr = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"AccessibleModal"];
+    
+    modalViewControlelr.view.backgroundColor = [UIColor clearColor];
+    self.modalPresentationStyle = UIModalPresentationCurrentContext;
+    
+    [self.navigationController presentViewController:modalViewControlelr animated:YES completion:nil];
+    
+    self.view.accessibilityElementsHidden = YES;
+    self.tabBarController.view.accessibilityElementsHidden = YES;
+    
+    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.deque.com"]];
 }
 
 + (BOOL)validateTextField:(UITextField*)textField
