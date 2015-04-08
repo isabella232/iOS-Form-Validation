@@ -186,6 +186,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVn-86-yhb" customClass="DEQDynamicTypeButton">
                                         <rect key="frame" x="273" y="439.5" width="53" height="32"/>
+                                        <color key="backgroundColor" red="0.79401436240000001" green="0.79401436240000001" blue="0.79401436240000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" none="YES" button="YES" link="YES"/>
                                         </accessibility>
