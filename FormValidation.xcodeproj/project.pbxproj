@@ -13,6 +13,7 @@
 		0F3FA3341AD5741E00BA7E58 /* DEQDynamicTypeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA3311AD5741E00BA7E58 /* DEQDynamicTypeTextView.m */; };
 		0F3FA3351AD5741E00BA7E58 /* DEQDynamicTypeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA3331AD5741E00BA7E58 /* DEQDynamicTypeLabel.m */; };
 		0F3FA3391AD5836700BA7E58 /* DEQDynamicTypeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA3381AD5836700BA7E58 /* DEQDynamicTypeButton.m */; };
+		0F3FA3421AD5C09C00BA7E58 /* IFVAnswersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA3411AD5C09C00BA7E58 /* IFVAnswersViewController.m */; };
 		0FD92C401ACDA61C007E1BAE /* IFVBadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD92C3F1ACDA61C007E1BAE /* IFVBadViewController.m */; };
 		0FD92C451ACDC93D007E1BAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FD92C441ACDC93D007E1BAE /* Localizable.strings */; };
 		8BD998091AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD998081AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m */; };
@@ -41,6 +42,8 @@
 		0F3FA3331AD5741E00BA7E58 /* DEQDynamicTypeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEQDynamicTypeLabel.m; sourceTree = "<group>"; };
 		0F3FA3371AD5836700BA7E58 /* DEQDynamicTypeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEQDynamicTypeButton.h; sourceTree = "<group>"; };
 		0F3FA3381AD5836700BA7E58 /* DEQDynamicTypeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEQDynamicTypeButton.m; sourceTree = "<group>"; };
+		0F3FA3401AD5C09C00BA7E58 /* IFVAnswersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFVAnswersViewController.h; sourceTree = "<group>"; };
+		0F3FA3411AD5C09C00BA7E58 /* IFVAnswersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVAnswersViewController.m; sourceTree = "<group>"; };
 		0FD92C3E1ACDA61C007E1BAE /* IFVBadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFVBadViewController.h; sourceTree = "<group>"; };
 		0FD92C3F1ACDA61C007E1BAE /* IFVBadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBadViewController.m; sourceTree = "<group>"; };
 		0FD92C441ACDC93D007E1BAE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -97,6 +100,8 @@
 				8BDAD3591AA60A95009B3458 /* IFVBestViewController.m */,
 				0FD92C3E1ACDA61C007E1BAE /* IFVBadViewController.h */,
 				0FD92C3F1ACDA61C007E1BAE /* IFVBadViewController.m */,
+				0F3FA3401AD5C09C00BA7E58 /* IFVAnswersViewController.h */,
+				0F3FA3411AD5C09C00BA7E58 /* IFVAnswersViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 				8BDAD3571AA60A95009B3458 /* AppDelegate.m in Sources */,
 				0FD92C401ACDA61C007E1BAE /* IFVBadViewController.m in Sources */,
 				0F3C9D941AD2D59D00D1FE9F /* CustomIOS7AlertView.m in Sources */,
+				0F3FA3421AD5C09C00BA7E58 /* IFVAnswersViewController.m in Sources */,
 				0F3FA3341AD5741E00BA7E58 /* DEQDynamicTypeTextView.m in Sources */,
 				0F3FA3391AD5836700BA7E58 /* DEQDynamicTypeButton.m in Sources */,
 				8BDAD3541AA60A95009B3458 /* main.m in Sources */,
