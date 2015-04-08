@@ -10,8 +10,9 @@
 		0F3C9D901AD0E91000D1FE9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDAD35B1AA60A95009B3458 /* Main.storyboard */; };
 		0F3C9D911AD0E91300D1FE9F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDAD3601AA60A95009B3458 /* LaunchScreen.xib */; };
 		0F3C9D941AD2D59D00D1FE9F /* CustomIOS7AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3C9D931AD2D59D00D1FE9F /* CustomIOS7AlertView.m */; };
-		0F3C9D971AD3015100D1FE9F /* IFVAccessibleModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3C9D961AD3015100D1FE9F /* IFVAccessibleModalViewController.m */; };
-		0F3C9D9A1AD306F800D1FE9F /* IFVNagivationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3C9D991AD306F800D1FE9F /* IFVNagivationController.m */; };
+		0F3FA3341AD5741E00BA7E58 /* DEQDynamicTypeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA3311AD5741E00BA7E58 /* DEQDynamicTypeTextView.m */; };
+		0F3FA3351AD5741E00BA7E58 /* DEQDynamicTypeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA3331AD5741E00BA7E58 /* DEQDynamicTypeLabel.m */; };
+		0F3FA3391AD5836700BA7E58 /* DEQDynamicTypeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA3381AD5836700BA7E58 /* DEQDynamicTypeButton.m */; };
 		0FD92C401ACDA61C007E1BAE /* IFVBadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD92C3F1ACDA61C007E1BAE /* IFVBadViewController.m */; };
 		0FD92C451ACDC93D007E1BAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FD92C441ACDC93D007E1BAE /* Localizable.strings */; };
 		8BD998091AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD998081AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m */; };
@@ -34,10 +35,12 @@
 /* Begin PBXFileReference section */
 		0F3C9D921AD2D59D00D1FE9F /* CustomIOS7AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOS7AlertView.h; sourceTree = "<group>"; };
 		0F3C9D931AD2D59D00D1FE9F /* CustomIOS7AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOS7AlertView.m; sourceTree = "<group>"; };
-		0F3C9D951AD3015100D1FE9F /* IFVAccessibleModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFVAccessibleModalViewController.h; sourceTree = "<group>"; };
-		0F3C9D961AD3015100D1FE9F /* IFVAccessibleModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVAccessibleModalViewController.m; sourceTree = "<group>"; };
-		0F3C9D981AD306F800D1FE9F /* IFVNagivationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFVNagivationController.h; sourceTree = "<group>"; };
-		0F3C9D991AD306F800D1FE9F /* IFVNagivationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVNagivationController.m; sourceTree = "<group>"; };
+		0F3FA3301AD5741E00BA7E58 /* DEQDynamicTypeTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEQDynamicTypeTextView.h; sourceTree = "<group>"; };
+		0F3FA3311AD5741E00BA7E58 /* DEQDynamicTypeTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEQDynamicTypeTextView.m; sourceTree = "<group>"; };
+		0F3FA3321AD5741E00BA7E58 /* DEQDynamicTypeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEQDynamicTypeLabel.h; sourceTree = "<group>"; };
+		0F3FA3331AD5741E00BA7E58 /* DEQDynamicTypeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEQDynamicTypeLabel.m; sourceTree = "<group>"; };
+		0F3FA3371AD5836700BA7E58 /* DEQDynamicTypeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEQDynamicTypeButton.h; sourceTree = "<group>"; };
+		0F3FA3381AD5836700BA7E58 /* DEQDynamicTypeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEQDynamicTypeButton.m; sourceTree = "<group>"; };
 		0FD92C3E1ACDA61C007E1BAE /* IFVBadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFVBadViewController.h; sourceTree = "<group>"; };
 		0FD92C3F1ACDA61C007E1BAE /* IFVBadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBadViewController.m; sourceTree = "<group>"; };
 		0FD92C441ACDC93D007E1BAE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -74,6 +77,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F3FA3361AD5832400BA7E58 /* DynamicTypeClasses */ = {
+			isa = PBXGroup;
+			children = (
+				0F3FA3301AD5741E00BA7E58 /* DEQDynamicTypeTextView.h */,
+				0F3FA3311AD5741E00BA7E58 /* DEQDynamicTypeTextView.m */,
+				0F3FA3321AD5741E00BA7E58 /* DEQDynamicTypeLabel.h */,
+				0F3FA3331AD5741E00BA7E58 /* DEQDynamicTypeLabel.m */,
+				0F3FA3371AD5836700BA7E58 /* DEQDynamicTypeButton.h */,
+				0F3FA3381AD5836700BA7E58 /* DEQDynamicTypeButton.m */,
+			);
+			name = DynamicTypeClasses;
+			sourceTree = "<group>";
+		};
 		0FD92C3D1ACD9FBA007E1BAE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,10 +97,6 @@
 				8BDAD3591AA60A95009B3458 /* IFVBestViewController.m */,
 				0FD92C3E1ACDA61C007E1BAE /* IFVBadViewController.h */,
 				0FD92C3F1ACDA61C007E1BAE /* IFVBadViewController.m */,
-				0F3C9D951AD3015100D1FE9F /* IFVAccessibleModalViewController.h */,
-				0F3C9D961AD3015100D1FE9F /* IFVAccessibleModalViewController.m */,
-				0F3C9D981AD306F800D1FE9F /* IFVNagivationController.h */,
-				0F3C9D991AD306F800D1FE9F /* IFVNagivationController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -116,6 +128,7 @@
 				8BDAD3601AA60A95009B3458 /* LaunchScreen.xib */,
 				0F3C9D921AD2D59D00D1FE9F /* CustomIOS7AlertView.h */,
 				0F3C9D931AD2D59D00D1FE9F /* CustomIOS7AlertView.m */,
+				0F3FA3361AD5832400BA7E58 /* DynamicTypeClasses */,
 				0FD92C3D1ACD9FBA007E1BAE /* ViewControllers */,
 				8BDAD3511AA60A95009B3458 /* Supporting Files */,
 			);
@@ -253,12 +266,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F3FA3351AD5741E00BA7E58 /* DEQDynamicTypeLabel.m in Sources */,
 				8BDAD35A1AA60A95009B3458 /* IFVBestViewController.m in Sources */,
 				8BDAD3571AA60A95009B3458 /* AppDelegate.m in Sources */,
-				0F3C9D971AD3015100D1FE9F /* IFVAccessibleModalViewController.m in Sources */,
-				0F3C9D9A1AD306F800D1FE9F /* IFVNagivationController.m in Sources */,
 				0FD92C401ACDA61C007E1BAE /* IFVBadViewController.m in Sources */,
 				0F3C9D941AD2D59D00D1FE9F /* CustomIOS7AlertView.m in Sources */,
+				0F3FA3341AD5741E00BA7E58 /* DEQDynamicTypeTextView.m in Sources */,
+				0F3FA3391AD5836700BA7E58 /* DEQDynamicTypeButton.m in Sources */,
 				8BDAD3541AA60A95009B3458 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

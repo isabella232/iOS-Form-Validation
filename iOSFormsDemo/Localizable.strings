@@ -24,3 +24,14 @@
 "PREDICATE_STRING_DATE" = "SELF MATCHES '[0-9]{1}[0-9]{1}[/]{1}[0-9]{1}[0-9]{1}[/]{1}[0-9]{1}[0-9]{1}[0-9]{1}[0-9]{1}'";
 
 "PREDICATE_STRING_EMAIL" = "SELF MATCHES '[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]+'";
+
+//Strings for the alert dialogue window
+"ALERT_TITLE" = "Thank You";
+
+"ALERT_PARAGRAPH" = "If you would like to learn more about accessibility and how Deque's Native iOS Accessibility Analysis tools can help you, visit our webpage or send us an e-mail.";
+
+"ALERT_BUTTON_EMAIL_US" = "E-mail us!";
+
+"ALERT_BUTTON_VISIT" = "Visit our Website!";
+
+"ALERT_BUTTON_CLOSE" = "Close";
