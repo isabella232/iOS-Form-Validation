@@ -159,6 +159,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     self.view.accessibilityElementsHidden = NO;
     self.tabBarController.view.accessibilityElementsHidden = NO;
+    UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, [self learnMoreLink]);
 }
 
 + (BOOL)validateTextField:(UITextField*)textField
