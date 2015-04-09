@@ -23,15 +23,15 @@
                                 <rect key="frame" x="15" y="20" width="570" height="531"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXl-k4-q76" customClass="DEQDynamicTypeLabel">
-                                        <rect key="frame" x="10" y="194.5" width="550" height="103.5"/>
+                                        <rect key="frame" x="10" y="194" width="550" height="103.5"/>
                                         <string key="text">In this app we will take you through some advanced native iOS Accessibility topics.  We demo these concepts by creating an accessible and inaccessible version of a basic form.  Forms are essential to many basic applications, and introduce a simple form of dynamic content that needs careful consideration to maintain accessibility.  </string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2e-YR-PMa" customClass="DEQDynamicTypeLabel">
-                                        <rect key="frame" x="10" y="341" width="550" height="82.5"/>
-                                        <string key="text">In order for the differences in the two forms to be apparent you must turn on VoiceOver.  There should be no visual differences.  Only differences in accessibility markup.  See how many of these differences you can spot yourself before visiting the "Key" tab. </string>
+                                        <rect key="frame" x="10" y="341" width="550" height="61.5"/>
+                                        <string key="text">In order for the differences in the two forms to be apparent you must turn on VoiceOver.  There should be no visual differences.  Only differences in accessibility markup.  See how many of these you can spot on your own.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -163,8 +163,8 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I would like to learn more about Deque." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMG-xn-C6T" customClass="DEQDynamicTypeLabel">
-                                        <rect key="frame" x="157" y="491" width="285.5" height="19.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open a modal dialogue." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMG-xn-C6T" customClass="DEQDynamicTypeLabel">
+                                        <rect key="frame" x="213" y="491" width="173.5" height="19.5"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <bool key="isElement" value="NO"/>
                                         </accessibility>
@@ -173,7 +173,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="501" verticalHuggingPriority="501" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhf-ai-wzt">
-                                        <rect key="frame" x="130" y="490" width="22" height="22"/>
+                                        <rect key="frame" x="186" y="490" width="22" height="22"/>
                                         <accessibility key="accessibilityConfiguration" label="I would like to learn more about Deque">
                                             <accessibilityTraits key="traits" none="YES" link="YES"/>
                                         </accessibility>
@@ -581,7 +581,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNl-Ve-9N5">
-                                <rect key="frame" x="130" y="512" width="22" height="22"/>
+                                <rect key="frame" x="186" y="512" width="22" height="22"/>
                                 <accessibility key="accessibilityConfiguration" label="I would like to learn more about Deque">
                                     <accessibilityTraits key="traits" none="YES" link="YES"/>
                                 </accessibility>
@@ -609,8 +609,8 @@
                                     <action selector="submitButton:" destination="ZLH-R6-JBm" eventType="touchUpInside" id="9MX-ma-8If"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I would like to learn more about Deque." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZ5-b1-lxF" customClass="DEQDynamicTypeLabel">
-                                <rect key="frame" x="157" y="513" width="285.5" height="19.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open a modal dialogue." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZ5-b1-lxF" customClass="DEQDynamicTypeLabel">
+                                <rect key="frame" x="213" y="513" width="173.5" height="19.5"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>

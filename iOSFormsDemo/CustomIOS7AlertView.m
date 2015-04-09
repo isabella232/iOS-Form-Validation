@@ -170,7 +170,6 @@ CGFloat buttonSpacerHeight = 0;
 - (IBAction)customIOS7dialogButtonTouchUpInside:(id)sender
 {
     if (delegate != NULL) {
-        NSLog(@"Delegate: %@", delegate);
         [delegate customIOS7dialogButtonTouchUpInside:self clickedButtonAtIndex:[sender tag]];
     }
 

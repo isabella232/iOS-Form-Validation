@@ -153,12 +153,16 @@
     [alertView setDelegate:self];
     
     [alertView show];
-    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.deque.com"]];
 }
 
 - (void)customIOS7dialogButtonTouchUpInside: (CustomIOS7AlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex
 {
-    NSLog(@"Delegate:%@ Button at position %ld is clicked on alertView %ld.", self, (long)buttonIndex, (long)[alertView tag]);
+    if (buttonIndex == 0) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mailto:chris.mcmeeking@deque.com"]];
+    } else if (buttonIndex == 1) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.deque.com"]];
+    }
+    
     [alertView close];
 }
 

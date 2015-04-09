@@ -93,13 +93,6 @@
 			name = DynamicTypeClasses;
 			sourceTree = "<group>";
 		};
-		0F3FA3461AD6D67E00BA7E58 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Categories;
-			sourceTree = "<group>";
-		};
 		0FD92C3D1ACD9FBA007E1BAE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,7 +133,6 @@
 				8BDAD3601AA60A95009B3458 /* LaunchScreen.xib */,
 				0F3C9D921AD2D59D00D1FE9F /* CustomIOS7AlertView.h */,
 				0F3C9D931AD2D59D00D1FE9F /* CustomIOS7AlertView.m */,
-				0F3FA3461AD6D67E00BA7E58 /* Categories */,
 				0F3FA3361AD5832400BA7E58 /* DynamicTypeClasses */,
 				0FD92C3D1ACD9FBA007E1BAE /* ViewControllers */,
 				8BDAD3511AA60A95009B3458 /* Supporting Files */,
