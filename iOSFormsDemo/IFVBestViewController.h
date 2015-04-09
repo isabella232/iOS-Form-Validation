@@ -9,20 +9,28 @@
 #import <UIKit/UIKit.h>
 
 @interface IFVBestViewController : UIViewController <UITextFieldDelegate>
-@property (weak, nonatomic) IBOutlet UILabel *emailLabel;
-@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
-@property (weak, nonatomic) IBOutlet UITextField *dateField;
+@property (weak, nonatomic) IBOutlet UILabel *nameRequirement;
+
+@property (weak, nonatomic) IBOutlet UILabel *emailLabel;
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
-@property (weak, nonatomic) IBOutlet UILabel *nameReq;
-@property (weak, nonatomic) IBOutlet UILabel *emailReq;
-@property (weak, nonatomic) IBOutlet UILabel *dateReq;
+@property (weak, nonatomic) IBOutlet UILabel *emailRequirement;
+
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UITextField *dateField;
+@property (weak, nonatomic) IBOutlet UILabel *dateRequirement;
+
+@property (weak, nonatomic) IBOutlet UIImageView *dequeLogo;
+
+@property (weak, nonatomic) IBOutlet UIButton *learnMoreLink;
+
+@property (weak, nonatomic) IBOutlet UIButton *submitButton;
+
 - (IBAction)submitButton:(id)sender;
 - (IBAction)backgroundTap:(id)sender;
-@property (weak, nonatomic) IBOutlet UIImageView *logo;
 - (IBAction)information:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *iWouldLikeToLearnMoreLink;
 
 + (BOOL)validateTextField:(UITextField*)textField
                fieldLabel:(UILabel*)fieldLabel
