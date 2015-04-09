@@ -23,7 +23,7 @@
                                 <rect key="frame" x="15" y="20" width="570" height="531"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXl-k4-q76" customClass="DEQDynamicTypeLabel">
-                                        <rect key="frame" x="10" y="194" width="550" height="103.5"/>
+                                        <rect key="frame" x="10" y="194.5" width="550" height="103.5"/>
                                         <string key="text">In this app we will take you through some advanced native iOS Accessibility topics.  We demo these concepts by creating an accessible and inaccessible version of a basic form.  Forms are essential to many basic applications, and introduce a simple form of dynamic content that needs careful consideration to maintain accessibility.  </string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -37,13 +37,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn on VoiceOver!!!!!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChN-1Y-Jsr" customClass="DEQDynamicTypeLabel">
-                                        <rect key="frame" x="5" y="313" width="158" height="19.5"/>
+                                        <rect key="frame" x="5" y="314" width="158" height="19.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="lNg-Pd-lY8">
-                                        <rect key="frame" x="50" y="1" width="470" height="185"/>
+                                        <rect key="frame" x="50" y="1" width="470" height="185.5"/>
                                         <accessibility key="accessibilityConfiguration" label="Logo, Deque Systems">
                                             <bool key="isElement" value="YES"/>
                                         </accessibility>
@@ -98,9 +98,9 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uCT-s9-Bzs">
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MVm-1t-h3w">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MVm-1t-h3w">
                                         <rect key="frame" x="69" y="211" width="515" height="30"/>
-                                        <color key="backgroundColor" red="0.82958491160000003" green="0.82958491160000003" blue="0.82958491160000003" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.92000078912525252" green="0.92000078912525252" blue="0.92000078912525252" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration" hint="Blarg" label="Name"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
@@ -115,7 +115,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1h1-CG-iGa" customClass="DEQDynamicTypeLabel">
-                                        <rect key="frame" x="16" y="291.5" width="40" height="19.5"/>
+                                        <rect key="frame" x="16" y="291" width="40" height="19.5"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <bool key="isElement" value="NO"/>
                                         </accessibility>
@@ -124,14 +124,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K7g-7z-f5L">
-                                        <rect key="frame" x="69" y="285.5" width="515" height="30"/>
-                                        <color key="backgroundColor" red="0.79401436240000001" green="0.79401436240000001" blue="0.79401436240000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="69" y="285" width="515" height="30"/>
+                                        <color key="backgroundColor" red="0.92000078910000005" green="0.92000078910000005" blue="0.92000078910000005" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration" hint="This field is required" label="Email"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="done"/>
                                     </textField>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="A" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qt5-65-V99">
-                                        <rect key="frame" x="79" y="320.5" width="521" height="19.5"/>
+                                        <rect key="frame" x="79" y="320" width="521" height="19.5"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <bool key="isElement" value="NO"/>
                                         </accessibility>
@@ -141,7 +141,7 @@
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mmh-Eb-gW8">
                                         <rect key="frame" x="69" y="360" width="515" height="30"/>
-                                        <color key="backgroundColor" red="0.79401436240000001" green="0.79401436240000001" blue="0.79401436240000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.92000078910000005" green="0.92000078910000005" blue="0.92000078910000005" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration" hint="m m / d d / y y y y, this field is required" label="Date"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
@@ -156,7 +156,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="mm/dd/yyyy" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="la1-df-6n2" customClass="DEQDynamicTypeLabel">
-                                        <rect key="frame" x="69" y="395" width="515" height="19.5"/>
+                                        <rect key="frame" x="79" y="395" width="505" height="19.5"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <bool key="isElement" value="NO"/>
                                         </accessibility>
@@ -164,7 +164,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I would like to learn more about Deque." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMG-xn-C6T" customClass="DEQDynamicTypeLabel">
-                                        <rect key="frame" x="157" y="491.5" width="285.5" height="19.5"/>
+                                        <rect key="frame" x="157" y="491" width="285.5" height="19.5"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <bool key="isElement" value="NO"/>
                                         </accessibility>
@@ -173,7 +173,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="501" verticalHuggingPriority="501" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhf-ai-wzt">
-                                        <rect key="frame" x="130" y="490.5" width="22" height="22"/>
+                                        <rect key="frame" x="130" y="490" width="22" height="22"/>
                                         <accessibility key="accessibilityConfiguration" label="I would like to learn more about Deque">
                                             <accessibilityTraits key="traits" none="YES" link="YES"/>
                                         </accessibility>
@@ -185,13 +185,16 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVn-86-yhb" customClass="DEQDynamicTypeButton">
-                                        <rect key="frame" x="273" y="439.5" width="53" height="32"/>
-                                        <color key="backgroundColor" red="0.79401436240000001" green="0.79401436240000001" blue="0.79401436240000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="271" y="439" width="57" height="32"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" none="YES" button="YES" link="YES"/>
                                         </accessibility>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                        <state key="normal" title="Submit"/>
+                                        <inset key="contentEdgeInsets" minX="2" minY="6" maxX="2" maxY="6"/>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h38-hS-Qcj"/>
                                         </connections>
@@ -222,11 +225,11 @@
                                     <constraint firstItem="eke-Vb-0Oe" firstAttribute="top" secondItem="MVm-1t-h3w" secondAttribute="bottom" constant="5" id="421-4b-Gyq"/>
                                     <constraint firstItem="mmh-Eb-gW8" firstAttribute="centerY" secondItem="zIX-Jr-rud" secondAttribute="centerY" id="7nw-oF-PAL"/>
                                     <constraint firstItem="mvi-v0-1g5" firstAttribute="leading" secondItem="uCT-s9-Bzs" secondAttribute="leading" constant="65" id="8Qg-hs-CaU"/>
-                                    <constraint firstItem="mmh-Eb-gW8" firstAttribute="leading" secondItem="la1-df-6n2" secondAttribute="leading" id="CJL-7W-DlH"/>
                                     <constraint firstAttribute="centerX" secondItem="mvi-v0-1g5" secondAttribute="centerX" id="Dz4-U5-r1S"/>
                                     <constraint firstItem="OMG-xn-C6T" firstAttribute="leading" secondItem="Fhf-ai-wzt" secondAttribute="trailing" constant="5" id="G5v-Ws-0Mt"/>
                                     <constraint firstItem="mmh-Eb-gW8" firstAttribute="top" secondItem="Qt5-65-V99" secondAttribute="bottom" constant="20" id="Gpm-EJ-7of"/>
                                     <constraint firstItem="MVm-1t-h3w" firstAttribute="leading" secondItem="eke-Vb-0Oe" secondAttribute="leading" constant="-10" id="JHn-35-TqB"/>
+                                    <constraint firstItem="eke-Vb-0Oe" firstAttribute="leading" secondItem="la1-df-6n2" secondAttribute="leading" id="KqE-Zy-12E"/>
                                     <constraint firstItem="MVm-1t-h3w" firstAttribute="leading" secondItem="DiE-bi-Ilw" secondAttribute="trailing" constant="10" id="MPU-5Y-wOv"/>
                                     <constraint firstItem="xVn-86-yhb" firstAttribute="top" secondItem="la1-df-6n2" secondAttribute="bottom" constant="25" id="NRa-Wh-IrP"/>
                                     <constraint firstItem="K7g-7z-f5L" firstAttribute="top" secondItem="eke-Vb-0Oe" secondAttribute="bottom" constant="20" id="SgY-Da-440"/>
@@ -268,7 +271,7 @@
                             <action selector="backgroundTap:" destination="BYZ-38-t0r" eventType="touchDown" id="MTf-A7-qvx"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fixed" image="ThumbsUp" id="fWN-LL-fVl" userLabel="Fixed"/>
+                    <tabBarItem key="tabBarItem" title="Fixed" image="Star" id="fWN-LL-fVl" userLabel="Fixed"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
@@ -284,13 +287,14 @@
                         <outlet property="nameField" destination="MVm-1t-h3w" id="ybY-VJ-Q6C"/>
                         <outlet property="nameLabel" destination="DiE-bi-Ilw" id="yCN-IE-dYM"/>
                         <outlet property="nameRequirement" destination="eke-Vb-0Oe" id="AYv-zq-2wu"/>
+                        <outlet property="submitButton" destination="xVn-86-yhb" id="HVS-4w-O2L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2465" y="333"/>
+            <point key="canvasLocation" x="3117" y="333"/>
         </scene>
-        <!--View Controller-->
+        <!--Issues-->
         <scene sceneID="ZqV-4G-UJr">
             <objects>
                 <viewController id="aFM-AS-eNq" sceneMemberID="viewController">
@@ -302,84 +306,171 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="500" verticalHuggingPriority="500" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ksH-Bp-LAD">
-                                <rect key="frame" x="65" y="21" width="470" height="185"/>
-                                <accessibility key="accessibilityConfiguration" label="Logo, Deque Systems">
-                                    <bool key="isElement" value="YES"/>
-                                </accessibility>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14J-Pa-fHt">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="500" verticalHuggingPriority="500" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="HDL-RC-Tnt">
+                                        <rect key="frame" x="65" y="1" width="470" height="185.5"/>
+                                        <accessibility key="accessibilityConfiguration" label="Logo, Deque Systems">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="HDL-RC-Tnt" secondAttribute="height" multiplier="718:283" id="VxG-J9-Y6g"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Form Entry Fields" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDy-R4-Err" customClass="DEQDynamicTypeLabel">
+                                        <rect key="frame" x="10" y="201" width="131" height="19.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- UITextView elements are not associated with their visible UILabels.  Fix: Set the A11y Label to match the visible label." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaa-0f-Ja3" customClass="DEQDynamicTypeLabel">
+                                        <rect key="frame" x="20" y="225" width="555" height="40.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Warning UILabels are not associted with their UITextView.  Fix: Set the A11y Hint to match the warning text." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1q-9p-OW5" customClass="DEQDynamicTypeLabel">
+                                        <rect key="frame" x="20" y="271" width="555" height="40.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dynamic Type (Largest Fonts)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5H1-at-T9e" customClass="DEQDynamicTypeLabel">
+                                        <rect key="frame" x="10" y="321" width="220" height="19.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Form elements can dissappear off screen.  Fix: Wrap content in a UIScrollView." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sm5-CC-8Am" customClass="DEQDynamicTypeLabel">
+                                        <rect key="frame" x="20" y="345" width="555" height="40.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEz-Im-TdR" customClass="DEQDynamicTypeLabel">
+                                        <rect key="frame" x="20" y="391" width="555" height="40.5"/>
+                                        <string key="text">- UILabels aren't multi line, text gets clipped on smaller screens.  Fix: Ensure UILabels have their numberOfLines property set to 0.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use of Color" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRC-74-deK" customClass="DEQDynamicTypeLabel">
+                                        <rect key="frame" x="10" y="442" width="93" height="19.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Default iOS Blue on white doesn't pass color contrast.  Fix: Bold the text for the button to make it pop a little more. " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLB-oX-4IO" customClass="DEQDynamicTypeLabel">
+                                        <rect key="frame" x="20" y="466" width="555" height="40.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZZ-Ae-y7k" customClass="DEQDynamicTypeLabel">
+                                        <rect key="frame" x="20" y="512" width="555" height="61.5"/>
+                                        <string key="text">- The only way to identify the "Submit" button as a button is the color of the text.  FIX: Add a shadow to the button, to make it standout against the white background.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1r-0V-0Il" customClass="DEQDynamicTypeLabel">
+                                        <rect key="frame" x="20" y="578" width="555" height="40.5"/>
+                                        <string key="text">- The UITextViews outline is very light.  The bounds of these fields can be hard to see.  Fix: Add a light gray background to the fields.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gs6-KL-96t" customClass="DEQDynamicTypeLabel">
+                                        <rect key="frame" x="10" y="629" width="41.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsl-Z6-Nvd" customClass="DEQDynamicTypeLabel">
+                                        <rect key="frame" x="20" y="653" width="555" height="61.5"/>
+                                        <string key="text">There are other miscellaneous A11y issues and bugs.  These are the issues this demo is meant to emphasize.  See how many others you can find.  It wouldn't be fun if we gave you all the answers!</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="ksH-Bp-LAD" secondAttribute="height" multiplier="718:283" id="yud-MC-XTW"/>
+                                    <constraint firstItem="CLB-oX-4IO" firstAttribute="top" secondItem="eRC-74-deK" secondAttribute="bottom" constant="5" id="1Mc-0R-fWJ"/>
+                                    <constraint firstItem="gaa-0f-Ja3" firstAttribute="trailing" secondItem="s1r-0V-0Il" secondAttribute="trailing" id="3ZZ-P1-uIC"/>
+                                    <constraint firstItem="5H1-at-T9e" firstAttribute="leading" secondItem="BDy-R4-Err" secondAttribute="leading" id="8io-H3-uam"/>
+                                    <constraint firstAttribute="centerX" secondItem="HDL-RC-Tnt" secondAttribute="centerX" id="8k1-te-UDc"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZZZ-Ae-y7k" secondAttribute="bottom" constant="50" id="AOD-IG-BwG"/>
+                                    <constraint firstItem="BDy-R4-Err" firstAttribute="leading" secondItem="Gs6-KL-96t" secondAttribute="leading" id="BEj-6r-vBA"/>
+                                    <constraint firstItem="eRC-74-deK" firstAttribute="top" secondItem="hEz-Im-TdR" secondAttribute="bottom" constant="10" id="Cch-Zu-UXM"/>
+                                    <constraint firstItem="5H1-at-T9e" firstAttribute="leading" secondItem="Sm5-CC-8Am" secondAttribute="leading" constant="-10" id="DDT-Wa-SEO"/>
+                                    <constraint firstItem="HDL-RC-Tnt" firstAttribute="leading" secondItem="14J-Pa-fHt" secondAttribute="leading" constant="65" id="F9m-E5-bBV"/>
+                                    <constraint firstItem="hEz-Im-TdR" firstAttribute="leading" secondItem="Sm5-CC-8Am" secondAttribute="leading" id="FhA-Ea-Ejr"/>
+                                    <constraint firstItem="ZZZ-Ae-y7k" firstAttribute="leading" secondItem="CLB-oX-4IO" secondAttribute="leading" id="IN4-Tn-N0i"/>
+                                    <constraint firstItem="eRC-74-deK" firstAttribute="leading" secondItem="5H1-at-T9e" secondAttribute="leading" id="KlK-xD-78x"/>
+                                    <constraint firstItem="R1q-9p-OW5" firstAttribute="leading" secondItem="gaa-0f-Ja3" secondAttribute="leading" id="POP-M9-Yvw"/>
+                                    <constraint firstItem="Sm5-CC-8Am" firstAttribute="leading" secondItem="gaa-0f-Ja3" secondAttribute="leading" id="Pgj-iJ-Zve"/>
+                                    <constraint firstItem="BDy-R4-Err" firstAttribute="leading" secondItem="gaa-0f-Ja3" secondAttribute="leading" constant="-10" id="Qfo-bL-vZz"/>
+                                    <constraint firstItem="s1r-0V-0Il" firstAttribute="top" secondItem="ZZZ-Ae-y7k" secondAttribute="bottom" constant="5" id="T6P-bi-aee"/>
+                                    <constraint firstItem="CLB-oX-4IO" firstAttribute="leading" secondItem="gaa-0f-Ja3" secondAttribute="leading" id="UoC-of-O31"/>
+                                    <constraint firstItem="gaa-0f-Ja3" firstAttribute="trailing" secondItem="Rsl-Z6-Nvd" secondAttribute="trailing" id="W63-DQ-0LN"/>
+                                    <constraint firstItem="Gs6-KL-96t" firstAttribute="top" secondItem="s1r-0V-0Il" secondAttribute="bottom" constant="10" id="bDG-nt-uNZ"/>
+                                    <constraint firstItem="ZZZ-Ae-y7k" firstAttribute="top" secondItem="CLB-oX-4IO" secondAttribute="bottom" constant="5" id="bhm-Du-P6q"/>
+                                    <constraint firstAttribute="trailing" secondItem="gaa-0f-Ja3" secondAttribute="trailing" constant="25" id="co6-aH-QKE"/>
+                                    <constraint firstItem="Rsl-Z6-Nvd" firstAttribute="top" secondItem="Gs6-KL-96t" secondAttribute="bottom" constant="5" id="dE2-ek-is9"/>
+                                    <constraint firstItem="Sm5-CC-8Am" firstAttribute="top" secondItem="5H1-at-T9e" secondAttribute="bottom" constant="5" id="eY2-vs-MWn"/>
+                                    <constraint firstItem="R1q-9p-OW5" firstAttribute="trailing" secondItem="gaa-0f-Ja3" secondAttribute="trailing" id="gcx-0L-TH7"/>
+                                    <constraint firstItem="Sm5-CC-8Am" firstAttribute="trailing" secondItem="gaa-0f-Ja3" secondAttribute="trailing" id="h8h-t7-Lnx"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BDy-R4-Err" secondAttribute="trailing" constant="10" id="jlc-rL-PHa"/>
+                                    <constraint firstItem="gaa-0f-Ja3" firstAttribute="leading" secondItem="s1r-0V-0Il" secondAttribute="leading" id="kxE-HI-n1E"/>
+                                    <constraint firstItem="gaa-0f-Ja3" firstAttribute="top" secondItem="BDy-R4-Err" secondAttribute="bottom" constant="5" id="loh-Sd-qzp"/>
+                                    <constraint firstItem="5H1-at-T9e" firstAttribute="top" secondItem="R1q-9p-OW5" secondAttribute="bottom" constant="10" id="lu5-oO-3Ft"/>
+                                    <constraint firstItem="CLB-oX-4IO" firstAttribute="trailing" secondItem="gaa-0f-Ja3" secondAttribute="trailing" id="luT-Ly-GMg"/>
+                                    <constraint firstItem="BDy-R4-Err" firstAttribute="top" secondItem="HDL-RC-Tnt" secondAttribute="bottom" constant="15" id="nxa-tx-TYK"/>
+                                    <constraint firstItem="R1q-9p-OW5" firstAttribute="top" secondItem="gaa-0f-Ja3" secondAttribute="bottom" constant="5" id="om3-gQ-FQf"/>
+                                    <constraint firstItem="gaa-0f-Ja3" firstAttribute="leading" secondItem="Rsl-Z6-Nvd" secondAttribute="leading" id="pnX-57-cmh"/>
+                                    <constraint firstItem="ZZZ-Ae-y7k" firstAttribute="trailing" secondItem="gaa-0f-Ja3" secondAttribute="trailing" id="qh0-a0-QJo"/>
+                                    <constraint firstItem="HDL-RC-Tnt" firstAttribute="top" secondItem="14J-Pa-fHt" secondAttribute="top" constant="1" id="rgo-gn-uEQ"/>
+                                    <constraint firstItem="hEz-Im-TdR" firstAttribute="trailing" secondItem="gaa-0f-Ja3" secondAttribute="trailing" id="s3X-Q9-Qna"/>
+                                    <constraint firstItem="hEz-Im-TdR" firstAttribute="leading" secondItem="gaa-0f-Ja3" secondAttribute="leading" id="sWV-vQ-CnR"/>
+                                    <constraint firstItem="ZZZ-Ae-y7k" firstAttribute="leading" secondItem="gaa-0f-Ja3" secondAttribute="leading" id="t5F-Gf-FHG"/>
+                                    <constraint firstItem="eRC-74-deK" firstAttribute="leading" secondItem="CLB-oX-4IO" secondAttribute="leading" constant="-10" id="tCV-E0-rqY"/>
+                                    <constraint firstAttribute="trailing" secondItem="HDL-RC-Tnt" secondAttribute="trailing" constant="65" id="uTC-Vx-VT9"/>
+                                    <constraint firstItem="hEz-Im-TdR" firstAttribute="top" secondItem="Sm5-CC-8Am" secondAttribute="bottom" constant="5" id="wXi-yr-0IW"/>
+                                    <constraint firstItem="BDy-R4-Err" firstAttribute="leading" secondItem="14J-Pa-fHt" secondAttribute="leading" constant="10" id="weX-Lc-tfW"/>
                                 </constraints>
-                            </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="79" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="XRD-oy-5SX">
-                                <rect key="frame" x="0.0" y="221" width="600" height="330"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="79" id="lHd-dZ-KSt">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lHd-dZ-KSt" id="Gku-sp-cyg">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6P-uC-6mm">
-                                                    <rect key="frame" x="8" y="8" width="41" height="19.5"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8W-I0-NLa">
-                                                    <rect key="frame" x="18" y="29" width="42" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="W8W-I0-NLa" firstAttribute="top" secondItem="T6P-uC-6mm" secondAttribute="bottom" constant="1.5" id="LEN-rQ-LYN"/>
-                                                <constraint firstItem="T6P-uC-6mm" firstAttribute="top" secondItem="Gku-sp-cyg" secondAttribute="topMargin" id="T7Q-9d-9qw"/>
-                                                <constraint firstItem="T6P-uC-6mm" firstAttribute="leading" secondItem="Gku-sp-cyg" secondAttribute="leadingMargin" id="YLK-nG-iMB"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="W8W-I0-NLa" secondAttribute="bottom" constant="21" id="bsj-Dx-HW3"/>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="W8W-I0-NLa" secondAttribute="trailing" constant="5" id="ejZ-aE-joe"/>
-                                                <constraint firstItem="T6P-uC-6mm" firstAttribute="leading" secondItem="W8W-I0-NLa" secondAttribute="leading" constant="-10" id="nKo-QS-otz"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XRD-oy-5SX" firstAttribute="width" secondItem="cmi-iq-QW3" secondAttribute="width" id="063-Ta-amm"/>
-                            <constraint firstItem="ksH-Bp-LAD" firstAttribute="top" secondItem="6EL-H3-95r" secondAttribute="bottom" constant="1" id="5dH-gz-jtg"/>
-                            <constraint firstAttribute="centerX" secondItem="ksH-Bp-LAD" secondAttribute="centerX" id="Eq8-U1-kPg"/>
-                            <constraint firstItem="ksH-Bp-LAD" firstAttribute="width" secondItem="ksH-Bp-LAD" secondAttribute="height" multiplier="718:283" id="XRz-f2-G6w"/>
-                            <constraint firstItem="XRD-oy-5SX" firstAttribute="top" secondItem="ksH-Bp-LAD" secondAttribute="bottom" constant="15" id="a58-8r-fWt"/>
-                            <constraint firstItem="sSl-8W-che" firstAttribute="top" secondItem="XRD-oy-5SX" secondAttribute="bottom" id="clv-pl-7d7"/>
-                            <constraint firstAttribute="centerX" secondItem="XRD-oy-5SX" secondAttribute="centerX" id="hjg-hF-acB"/>
-                            <constraint firstItem="ksH-Bp-LAD" firstAttribute="width" secondItem="cmi-iq-QW3" secondAttribute="width" constant="-130" id="jv9-Si-iMI"/>
+                            <constraint firstItem="14J-Pa-fHt" firstAttribute="top" secondItem="6EL-H3-95r" secondAttribute="bottom" id="Orc-bV-MQM"/>
+                            <constraint firstItem="sSl-8W-che" firstAttribute="top" secondItem="14J-Pa-fHt" secondAttribute="bottom" id="RS9-bX-uBv"/>
+                            <constraint firstItem="14J-Pa-fHt" firstAttribute="width" secondItem="cmi-iq-QW3" secondAttribute="width" id="bCs-EH-noE"/>
+                            <constraint firstAttribute="centerX" secondItem="14J-Pa-fHt" secondAttribute="centerX" id="bcA-1Q-IYc"/>
+                            <constraint firstItem="HDL-RC-Tnt" firstAttribute="width" secondItem="cmi-iq-QW3" secondAttribute="width" constant="-130" id="cv5-A1-348"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="9Mk-Db-Rml"/>
+                    <tabBarItem key="tabBarItem" title="Issues" image="list" id="9Mk-Db-Rml"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cto-Zo-oe5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3098" y="333"/>
+            <point key="canvasLocation" x="2479" y="333"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bUV-ao-42W">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Tmd-iF-PE0" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Tmd-iF-PE0" customClass="IFVTabBarController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="88g-eU-tbB">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="88g-eU-tbB">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="N1t-XC-E25" kind="relationship" relationship="viewControllers" id="VL2-M1-VJ1"/>
                         <segue destination="ZLH-R6-JBm" kind="relationship" relationship="viewControllers" id="pmd-gN-Imr"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ZWq-Ch-xc1"/>
                         <segue destination="aFM-AS-eNq" kind="relationship" relationship="viewControllers" id="qlD-vu-QjU"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ZWq-Ch-xc1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X27-yI-MkV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -407,7 +498,7 @@
         <!--Broken-->
         <scene sceneID="XA3-qW-CDC">
             <objects>
-                <viewController storyboardIdentifier="broken1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZLH-R6-JBm" customClass="IFVBadViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="broken1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZLH-R6-JBm" customClass="IFVBrokenViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hto-Oi-MJ9"/>
                         <viewControllerLayoutGuide type="bottom" id="ldZ-gP-yLz"/>
@@ -598,22 +689,28 @@
                     <size key="freeformSize" width="600" height="600"/>
                     <connections>
                         <outlet property="dateField" destination="s6M-LI-guo" id="H2N-XD-CrF"/>
+                        <outlet property="dateLabel" destination="60B-6H-W4d" id="zz5-9R-Rp6"/>
                         <outlet property="dateReq" destination="yOd-ij-aX2" id="oIQ-aV-zpC"/>
                         <outlet property="emailField" destination="CKC-gX-rtM" id="PFh-hR-s43"/>
+                        <outlet property="emailLabel" destination="Wdg-km-HRR" id="nyN-25-aIt"/>
                         <outlet property="emailReq" destination="SdO-Y1-b3h" id="YHD-2J-BM0"/>
                         <outlet property="iWouldLikeToLearnMoreLink" destination="tNl-Ve-9N5" id="R8W-tv-nZp"/>
                         <outlet property="logo" destination="yJL-4Z-40B" id="v5s-Zb-U5u"/>
+                        <outlet property="nameField" destination="rBO-Do-73L" id="UmM-gy-0H7"/>
+                        <outlet property="nameLabel" destination="Riv-UV-7IX" id="56Y-ty-bgI"/>
+                        <outlet property="nameReq" destination="oS1-va-kFr" id="AfX-5g-yow"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xwu-FL-ayk" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1839" y="333"/>
+            <point key="canvasLocation" x="1837" y="333"/>
         </scene>
     </scenes>
     <resources>
         <image name="DequeLogo" width="717" height="283"/>
         <image name="Explosion" width="33" height="33"/>
-        <image name="ThumbsUp" width="33" height="33"/>
+        <image name="Star" width="33" height="33"/>
         <image name="information" width="33" height="33"/>
+        <image name="list" width="33" height="33"/>
     </resources>
 </document>

@@ -26,6 +26,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *learnMoreLink;
 
+@property (weak, nonatomic) IBOutlet UIButton *submitButton;
 
 - (IBAction)submitButton:(id)sender;
 - (IBAction)backgroundTap:(id)sender;

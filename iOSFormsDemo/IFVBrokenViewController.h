@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IFVBadViewController : UIViewController <UITextFieldDelegate>
+@interface IFVBrokenViewController : UIViewController <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *emailLabel;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;

@@ -56,6 +56,7 @@
     
     
 }
+
 -(void)didChangePreferredContentSize {
     self.titleLabel.font = [UIFont preferredFontForTextStyle:_contentSizeCategory];
 }

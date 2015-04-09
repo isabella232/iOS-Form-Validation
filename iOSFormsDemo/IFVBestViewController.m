@@ -29,6 +29,15 @@
     
     _emailField.accessibilityHint = NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil);
     _nameField.accessibilityHint = NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil);
+
+    _submitButton.layer.shadowOffset = CGSizeMake(1,1);
+    _submitButton.layer.shadowOpacity = 1;
+    _submitButton.layer.cornerRadius = 3.0;
+    _submitButton.layer.shadowColor = [UIColor grayColor].CGColor;
+    
+    self.tabBarController.tabBar.tintColor = [UIColor greenColor];
+
+
 }
 
 - (IBAction)submitButton:(id)sender {
@@ -73,7 +82,7 @@
                            predicateA11yHint:nil
                            originalA11yLabel:_nameLabel.text
                             originalA11yHint:NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil)];
-    
+   
     if (_nameRequirement.text) {
         UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, _nameField);
     } else if (_emailRequirement.text) {
