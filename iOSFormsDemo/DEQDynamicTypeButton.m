@@ -54,7 +54,11 @@
                                                  name:UIContentSizeCategoryDidChangeNotification
                                                object:nil];
     
-    
+    //Let's make our button pop out a little bit!
+    self.layer.shadowOffset = CGSizeMake(1,1);
+    self.layer.shadowOpacity = 1;
+    self.layer.cornerRadius = 3.0;
+    self.layer.shadowColor = [UIColor grayColor].CGColor;
 }
 
 -(void)didChangePreferredContentSize {

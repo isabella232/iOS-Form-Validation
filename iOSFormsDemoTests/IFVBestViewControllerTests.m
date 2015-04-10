@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import "IFVBestViewController.h"
+#import "IFVFixedViewController.h"
 #import "AppDelegate.h"
 
 #define DEQAssertStringEqual(testString, correctString) XCTAssert([testString isEqualToString:correctString], @"\"%@\"", testString)
@@ -17,7 +17,7 @@
 
 @interface iOSFormsViewControllerTests : XCTestCase
 
-@property (strong, nonatomic) IFVBestViewController *controller;
+@property (strong, nonatomic) IFVFixedViewController *controller;
 
 @end
 
@@ -42,17 +42,23 @@
 
 - (void)testInitialState {
     
-    DEQAssertStringEqual(self.controller.emailField.accessibilityHint, @"This field is required.");
-    DEQAssertStringEqual(self.controller.emailField.accessibilityLabel, @"Email");
+    XCTAssertFalse(self.controller.emailField.isAccessibilityElement);
+    XCTAssertTrue(self.controller.emailField.superview.isAccessibilityElement);
+    DEQAssertStringEqual(self.controller.emailField.superview.accessibilityHint, @"This field is required.");
+    DEQAssertStringEqual(self.controller.emailField.superview.accessibilityLabel, @"Email");
     XCTAssert([[self.controller emailRequirement] isHidden]);
     
-    DEQAssertStringEqual(self.controller.dateField.accessibilityHint, @"m m / d d / y y y y This field is required.");
-    DEQAssertStringEqual(self.controller.dateField.accessibilityLabel, @"Date");
+    XCTAssertFalse(self.controller.dateField.isAccessibilityElement);
+    XCTAssertTrue(self.controller.dateField.superview.isAccessibilityElement);
+    DEQAssertStringEqual(self.controller.dateField.superview.accessibilityHint, @"This field is required.");
+    DEQAssertStringEqual(self.controller.dateField.superview.accessibilityLabel, @"Date m m / d d / y y y y");
     DEQAssertStringEqual(self.controller.dateRequirement.text, @"mm/dd/yyyy");
     XCTAssertFalse([[self.controller dateRequirement] isHidden]);
     
-    DEQAssertStringEqual(self.controller.nameField.accessibilityHint, @"This field is required.");
-    DEQAssertStringEqual(self.controller.nameField.accessibilityLabel, @"Name");
+    XCTAssertFalse(self.controller.nameField.isAccessibilityElement);
+    XCTAssertTrue(self.controller.nameField.superview.isAccessibilityElement);
+    DEQAssertStringEqual(self.controller.nameField.superview.accessibilityHint, @"This field is required.");
+    DEQAssertStringEqual(self.controller.nameField.superview.accessibilityLabel, @"Name");
     XCTAssert([self.controller nameRequirement]);
     
     // Check that accessibilityLabel matches the image.
@@ -75,18 +81,18 @@
     // Verify visual
     DEQAssertStringEqual(self.controller.emailRequirement.text, @"Please enter a valid email.");
     XCTAssertFalse([self.controller.emailRequirement isHidden]);
-    DEQAssertStringEqual(self.controller.emailField.accessibilityLabel, @"Email Please enter a valid email.");
-    DEQAssertEmptyString(self.controller.emailField.accessibilityHint);
+    DEQAssertStringEqual(self.controller.emailField.superview.accessibilityLabel, @"Email ERROR Please enter a valid email.");
+    DEQAssertEmptyString(self.controller.emailField.superview.accessibilityHint);
 
     DEQAssertStringEqual(self.controller.nameRequirement.text, @"Can only contain letters and numbers.");
     XCTAssertFalse([self.controller.nameRequirement isHidden]);
-    DEQAssertStringEqual(self.controller.nameField.accessibilityLabel, @"Name Can only contain letters and numbers.");
-    DEQAssertEmptyString(self.controller.nameField.accessibilityHint);
+    DEQAssertStringEqual(self.controller.nameField.superview.accessibilityLabel, @"Name ERROR Can only contain letters and numbers.");
+    DEQAssertEmptyString(self.controller.nameField.superview.accessibilityHint);
     
     DEQAssertStringEqual(self.controller.dateRequirement.text, @"Required format mm/dd/yyyy.");
     XCTAssertFalse([self.controller.dateRequirement isHidden]);
-    DEQAssertStringEqual(self.controller.dateField.accessibilityLabel, @"Date Required format m m / d d / y y y y.");
-    DEQAssertEmptyString(self.controller.dateField.accessibilityHint);
+    DEQAssertStringEqual(self.controller.dateField.superview.accessibilityLabel, @"Date Required format m m / d d / y y y y.");
+    DEQAssertEmptyString(self.controller.dateField.superview.accessibilityHint);
     
     [self testUserSubmitsValidStrings];
 }
@@ -103,18 +109,18 @@
     // Test visual
     DEQAssertStringEqual(self.controller.emailRequirement.text, @"This field is required.");
     XCTAssertFalse([self.controller.emailRequirement isHidden]);
-    DEQAssertStringEqual(self.controller.emailField.accessibilityLabel, @"Email This field is required.");
-    XCTAssertNil(self.controller.emailField.accessibilityHint);
+    DEQAssertStringEqual(self.controller.emailField.superview.accessibilityLabel, @"Email ERROR This field is required.");
+    XCTAssertNil(self.controller.emailField.superview.accessibilityHint);
     
     DEQAssertStringEqual(self.controller.dateRequirement.text, @"This field is required. Required format mm/dd/yyyy.");
     XCTAssertFalse([self.controller.dateRequirement isHidden]);
-    DEQAssertStringEqual(self.controller.dateField.accessibilityLabel, @"Date This field is required.");
-    DEQAssertStringEqual(self.controller.dateField.accessibilityHint, @"Required format m m / d d / y y y y.");
+    DEQAssertStringEqual(self.controller.dateField.superview.accessibilityLabel, @"Date ERROR This field is required.");
+    DEQAssertStringEqual(self.controller.dateField.superview.accessibilityHint, @"Required format m m / d d / y y y y.");
     
     DEQAssertStringEqual(self.controller.nameRequirement.text, @"This field is required.");
     XCTAssertFalse([self.controller.nameRequirement isHidden]);
-    DEQAssertStringEqual(self.controller.nameField.accessibilityLabel, @"Name This field is required.");
-    XCTAssertNil(self.controller.nameField.accessibilityHint);
+    DEQAssertStringEqual(self.controller.nameField.superview.accessibilityLabel, @"Name ERROR This field is required.");
+    XCTAssertNil(self.controller.nameField.superview.accessibilityHint);
     
     [self testUserSubmitsValidStrings];
 }
@@ -129,16 +135,16 @@
     [self.controller submitButton:self];
     
     XCTAssertTrue([self.controller.emailRequirement isHidden]);
-    DEQAssertStringEqual(self.controller.emailField.accessibilityLabel, @"Email");
-    DEQAssertStringEqual(self.controller.emailField.accessibilityHint, @"This field is required.");
+    DEQAssertStringEqual(self.controller.emailField.superview.accessibilityLabel, @"Email");
+    DEQAssertStringEqual(self.controller.emailField.superview.accessibilityHint, @"This field is required.");
     
     XCTAssertTrue([self.controller.nameRequirement isHidden]);
-    DEQAssertStringEqual(self.controller.nameField.accessibilityLabel, @"Name");
-    DEQAssertStringEqual(self.controller.nameField.accessibilityHint, @"This field is required.");
+    DEQAssertStringEqual(self.controller.nameField.superview.accessibilityLabel, @"Name");
+    DEQAssertStringEqual(self.controller.nameField.superview.accessibilityHint, @"This field is required.");
 
     XCTAssertTrue([self.controller.dateRequirement isHidden]);
-    DEQAssertStringEqual(self.controller.dateField.accessibilityLabel, @"Date");
-    DEQAssertStringEqual(self.controller.dateField.accessibilityHint, @"m m / d d / y y y y This field is required.");
+    DEQAssertStringEqual(self.controller.dateField.superview.accessibilityLabel, @"Date");
+    DEQAssertStringEqual(self.controller.dateField.superview.accessibilityHint, @"m m / d d / y y y y This field is required.");
 }
 
 @end

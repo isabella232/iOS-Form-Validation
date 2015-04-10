@@ -6,14 +6,13 @@
 //  Copyright (c) Deque Systems 2015. All rights reserved.
 //
 #import "regex.h"
-#import "IFVBestViewController.h"
+#import "IFVFixedViewController.h"
 #import "CustomIOS7AlertView.h"
 
-#define kOFFSET_FOR_KEYBOARD 80.0
-@interface IFVBestViewController ()<CustomIOS7AlertViewDelegate>
+@interface IFVFixedViewController ()<CustomIOS7AlertViewDelegate>
 @end
 
-@implementation IFVBestViewController
+@implementation IFVFixedViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,59 +21,39 @@
     _nameField.delegate = self;
     _emailField.delegate = self;
     
-    _emailRequirement.textColor = [UIColor blackColor];
-    
     _dateField.accessibilityHint = [NSString stringWithFormat:@"%@ %@",
                                      NSLocalizedString(@"DATE_FORMAT_A11Y", nil),
                                      NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil)];
     
     _emailField.accessibilityHint = NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil);
     _nameField.superview.accessibilityHint = NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil);
-
-    //Let's make our button pop out a little bit!
-    _submitButton.layer.shadowOffset = CGSizeMake(1,1);
-    _submitButton.layer.shadowOpacity = 1;
-    _submitButton.layer.cornerRadius = 3.0;
-    _submitButton.layer.shadowColor = [UIColor grayColor].CGColor;
     
     [_dateField.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapDateView)]];
     [_emailField.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapeEmailView)]];
     [_nameField.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapNameView)]];
-
-}
-
-- (void)singleTapDateView {
-    [_dateField becomeFirstResponder];
-}
-
-- (void)singleTapNameView {
-    [_nameField becomeFirstResponder];
-}
-
-- (void)singleTapeEmailView {
-    [_emailField becomeFirstResponder];
+    [_learnMoreLink.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(information:)]];
 }
 
 - (IBAction)submitButton:(id)sender {
     
-    [IFVBestViewController validateTextField:_emailField
+    [IFVFixedViewController validateTextField:_emailField
                                   fieldLabel:_emailLabel
                                 warningLabel:_emailRequirement
                               missingWarning:NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil)
-                            missingA11yLabel:[NSString stringWithFormat:@"%@ %@", _emailLabel.text, NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil)]
+                            missingA11yLabel:[NSString stringWithFormat:@"%@ %@", _emailLabel.text, NSLocalizedString(@"VALIDATION_ERROR_MISSING_A11Y", nil)]
                              missingA11yHint:nil
                                 forPredicate:[NSPredicate predicateWithFormat:NSLocalizedString(@"PREDICATE_STRING_EMAIL", nil)]
                             predicateWarning:NSLocalizedString(@"VALIDATION_ERROR_EMAIL_FORMAT", nil)
-                          predicateA11yLabel:[NSString stringWithFormat:@"%@ %@", _emailLabel.text, NSLocalizedString(@"VALIDATION_ERROR_EMAIL_FORMAT", nil)]
+                          predicateA11yLabel:[NSString stringWithFormat:@"%@ %@", _emailLabel.text, NSLocalizedString(@"VALIDATION_ERROR_EMAIL_FORMAT_A11Y", nil)]
                            predicateA11yHint:nil
                            originalA11yLabel:_emailLabel.text
                             originalA11yHint:NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil)];
     
-    [IFVBestViewController validateTextField:_dateField
+    [IFVFixedViewController validateTextField:_dateField
                                   fieldLabel:_dateLabel
                                 warningLabel:_dateRequirement
                               missingWarning:[NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil), NSLocalizedString(@"VALIDATION_ERROR_DATE_FORMAT", nil)]
-                            missingA11yLabel:[NSString stringWithFormat:@"%@ %@", _dateLabel.text, NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil)]
+                            missingA11yLabel:[NSString stringWithFormat:@"%@ %@", _dateLabel.text, NSLocalizedString(@"VALIDATION_ERROR_MISSING_A11Y", nil)]
                              missingA11yHint:NSLocalizedString(@"VALIDATION_ERROR_DATE_FORMAT_A11Y", nil)
                                 forPredicate:[NSPredicate predicateWithFormat:NSLocalizedString(@"PREDICATE_STRING_DATE", nil)]
                             predicateWarning:NSLocalizedString(@"VALIDATION_ERROR_DATE_FORMAT", nil)
@@ -85,15 +64,15 @@
                                               NSLocalizedString(@"DATE_FORMAT_A11Y", nil),
                                               NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil)]];
     
-    [IFVBestViewController validateTextField:_nameField
+    [IFVFixedViewController validateTextField:_nameField
                                   fieldLabel:_nameLabel
                                 warningLabel:_nameRequirement
                               missingWarning:NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil)
-                            missingA11yLabel:[NSString stringWithFormat:@"%@ %@", _nameLabel.text, NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil)]
+                            missingA11yLabel:[NSString stringWithFormat:@"%@ %@", _nameLabel.text, NSLocalizedString(@"VALIDATION_ERROR_MISSING_A11Y", nil)]
                              missingA11yHint:nil
                                 forPredicate:[NSPredicate predicateWithFormat:NSLocalizedString(@"PREDICATE_STRING_NAME", nil)]
                             predicateWarning:NSLocalizedString(@"VALIDATION_ERROR_NAME_FORMAT", nil)
-                          predicateA11yLabel:[NSString stringWithFormat:@"%@ %@", _nameLabel.text, NSLocalizedString(@"VALIDATION_ERROR_NAME_FORMAT", nil)]
+                          predicateA11yLabel:[NSString stringWithFormat:@"%@ %@", _nameLabel.text, NSLocalizedString(@"VALIDATION_ERROR_NAME_FORMAT_A11Y", nil)]
                            predicateA11yHint:nil
                            originalA11yLabel:_nameLabel.text
                             originalA11yHint:NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil)];
@@ -193,6 +172,7 @@
     if (textField.text == nil || [textField.text isEqualToString:@""]) {
         warningLabel.text = missingWarning;
         warningLabel.hidden = NO;
+        warningLabel.textColor = [UIColor redColor];
         
         textField.superview.accessibilityLabel = missingA11yLabel;
         textField.superview.accessibilityHint = missingA11yHint;
@@ -201,6 +181,7 @@
     } else if (![predicate evaluateWithObject:textField.text]) {
         warningLabel.text = predicateWarning;
         warningLabel.hidden = NO;
+        warningLabel.textColor = [UIColor redColor];
         
         textField.superview.accessibilityHint = predicateA11yHint;
         textField.superview.accessibilityLabel = predicateA11yLabel;
@@ -215,6 +196,18 @@
         
         return YES;
     }
+}
+
+- (void)singleTapDateView {
+    [_dateField becomeFirstResponder];
+}
+
+- (void)singleTapNameView {
+    [_nameField becomeFirstResponder];
+}
+
+- (void)singleTapeEmailView {
+    [_emailField becomeFirstResponder];
 }
 
 @end

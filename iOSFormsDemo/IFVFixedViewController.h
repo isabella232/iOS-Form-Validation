@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IFVBestViewController : UIViewController <UITextFieldDelegate>
+@interface IFVFixedViewController : UIViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
