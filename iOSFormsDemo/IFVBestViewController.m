@@ -9,6 +9,7 @@
 #import "IFVBestViewController.h"
 #import "CustomIOS7AlertView.h"
 
+#define kOFFSET_FOR_KEYBOARD 80.0
 @interface IFVBestViewController ()<CustomIOS7AlertViewDelegate>
 @end
 
@@ -28,16 +29,30 @@
                                      NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil)];
     
     _emailField.accessibilityHint = NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil);
-    _nameField.accessibilityHint = NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil);
+    _nameField.superview.accessibilityHint = NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil);
 
+    //Let's make our button pop out a little bit!
     _submitButton.layer.shadowOffset = CGSizeMake(1,1);
     _submitButton.layer.shadowOpacity = 1;
     _submitButton.layer.cornerRadius = 3.0;
     _submitButton.layer.shadowColor = [UIColor grayColor].CGColor;
     
-    self.tabBarController.tabBar.tintColor = [UIColor greenColor];
+    [_dateField.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapDateView)]];
+    [_emailField.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapeEmailView)]];
+    [_nameField.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapNameView)]];
 
+}
 
+- (void)singleTapDateView {
+    [_dateField becomeFirstResponder];
+}
+
+- (void)singleTapNameView {
+    [_nameField becomeFirstResponder];
+}
+
+- (void)singleTapeEmailView {
+    [_emailField becomeFirstResponder];
 }
 
 - (IBAction)submitButton:(id)sender {
@@ -179,24 +194,24 @@
         warningLabel.text = missingWarning;
         warningLabel.hidden = NO;
         
-        textField.accessibilityLabel = missingA11yLabel;
-        textField.accessibilityHint = missingA11yHint;
+        textField.superview.accessibilityLabel = missingA11yLabel;
+        textField.superview.accessibilityHint = missingA11yHint;
         
         return NO;
     } else if (![predicate evaluateWithObject:textField.text]) {
         warningLabel.text = predicateWarning;
         warningLabel.hidden = NO;
         
-        textField.accessibilityHint = predicateA11yHint;
-        textField.accessibilityLabel = predicateA11yLabel;
+        textField.superview.accessibilityHint = predicateA11yHint;
+        textField.superview.accessibilityLabel = predicateA11yLabel;
         
         return NO;
     } else {
         warningLabel.hidden = YES;
         warningLabel.text = nil;
         
-        textField.accessibilityLabel = originalA11yLabel;
-        textField.accessibilityHint = originalA11yHint;
+        textField.superview.accessibilityLabel = originalA11yLabel;
+        textField.superview.accessibilityHint = originalA11yHint;
         
         return YES;
     }

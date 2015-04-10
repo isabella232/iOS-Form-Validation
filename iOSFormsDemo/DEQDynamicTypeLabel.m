@@ -41,8 +41,6 @@
                                                  name:UIContentSizeCategoryDidChangeNotification
                                                object:nil];
     
-    self.numberOfLines = 0;
-
 }
 
 -(void)didChangePreferredContentSize {
