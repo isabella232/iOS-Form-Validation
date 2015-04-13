@@ -10,11 +10,14 @@
 #import <XCTest/XCTest.h>
 #import "IFVBestViewController.h"
 #import "AppDelegate.h"
+#import "UIColor+DQColor.h"
+@import CoreGraphics;
 
 #define DEQAssertStringEqual(testString, correctString) XCTAssert([testString isEqualToString:correctString], @"\"%@\"", testString)
 #define DEQAssertStringEndsWith(testString, endsWithString) XCTAssert([testString hasSuffix:endsWithString], @"\"%@\"", testString)
 #define DEQAssertEmptyString(testString) XCTAssert(testString == nil || [testString isEqualToString:@""], @"\"%@\"", testString)
-
+#define DEQAssertColorEqualsRed(color) XCTAssertTrue([color isEqualToColorWithRed:0.919586479 green: 0.055712726  blue: 0.0222684592 alpha:1.0])
+#define DEQAssertColorEqualsBlack(color) XCTAssertTrue([color isEqualToColorWithRed:0 green: 0  blue: 0 alpha:1.0])
 @interface iOSFormsViewControllerTests : XCTestCase
 
 @property (strong, nonatomic) IFVBestViewController *controller;
@@ -139,6 +142,24 @@
     XCTAssertTrue([self.controller.dateRequirement isHidden]);
     DEQAssertStringEqual(self.controller.dateField.accessibilityLabel, @"Date");
     DEQAssertStringEqual(self.controller.dateField.accessibilityHint, @"m m / d d / y y y y This field is required.");
+}
+
+-(void)testColorChangeOfTextForDateField{
+    
+    self.controller.emailField.text = @"";
+    self.controller.nameField.text = @"";
+    self.controller.dateField.text = @"";
+    
+    DEQAssertColorEqualsBlack(self.controller.dateRequirement.textColor);
+    DEQAssertColorEqualsRed(self.controller.nameRequirement.textColor);
+    DEQAssertColorEqualsRed(self.controller.emailRequirement.textColor);
+ 
+    [self.controller submitButton];
+    
+    DEQAssertColorEqualsRed(self.controller.dateRequirement.textColor);
+    DEQAssertColorEqualsRed(self.controller.nameRequirement.textColor);
+    DEQAssertColorEqualsRed(self.controller.emailRequirement.textColor);
+    
 }
 
 @end

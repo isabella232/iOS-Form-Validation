@@ -16,6 +16,7 @@
 		0F3FA3451AD6C41300BA7E58 /* IFVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA3441AD6C41300BA7E58 /* IFVTabBarController.m */; };
 		0FD92C401ACDA61C007E1BAE /* IFVBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD92C3F1ACDA61C007E1BAE /* IFVBrokenViewController.m */; };
 		0FD92C451ACDC93D007E1BAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FD92C441ACDC93D007E1BAE /* Localizable.strings */; };
+		8B91C4781AD86D77005C4F3F /* UIColor+DQColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B91C4771AD86D77005C4F3F /* UIColor+DQColor.m */; };
 		8BD998091AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD998081AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m */; };
 		8BDAD3541AA60A95009B3458 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD3531AA60A95009B3458 /* main.m */; };
 		8BDAD3571AA60A95009B3458 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD3561AA60A95009B3458 /* AppDelegate.m */; };
@@ -47,6 +48,8 @@
 		0FD92C3E1ACDA61C007E1BAE /* IFVBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFVBrokenViewController.h; sourceTree = "<group>"; };
 		0FD92C3F1ACDA61C007E1BAE /* IFVBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBrokenViewController.m; sourceTree = "<group>"; };
 		0FD92C441ACDC93D007E1BAE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		8B91C4761AD86D77005C4F3F /* UIColor+DQColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DQColor.h"; sourceTree = "<group>"; };
+		8B91C4771AD86D77005C4F3F /* UIColor+DQColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DQColor.m"; sourceTree = "<group>"; };
 		8BD998081AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBestViewControllerTests.m; sourceTree = "<group>"; };
 		8BDAD34E1AA60A95009B3458 /* FormValidation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormValidation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDAD3521AA60A95009B3458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,6 +105,8 @@
 				0FD92C3F1ACDA61C007E1BAE /* IFVBrokenViewController.m */,
 				8BDAD3581AA60A95009B3458 /* IFVBestViewController.h */,
 				8BDAD3591AA60A95009B3458 /* IFVBestViewController.m */,
+				8B91C4761AD86D77005C4F3F /* UIColor+DQColor.h */,
+				8B91C4771AD86D77005C4F3F /* UIColor+DQColor.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 				0FD92C401ACDA61C007E1BAE /* IFVBrokenViewController.m in Sources */,
 				0F3C9D941AD2D59D00D1FE9F /* CustomIOS7AlertView.m in Sources */,
 				0F3FA3341AD5741E00BA7E58 /* DEQDynamicTypeTextView.m in Sources */,
+				8B91C4781AD86D77005C4F3F /* UIColor+DQColor.m in Sources */,
 				0F3FA3391AD5836700BA7E58 /* DEQDynamicTypeButton.m in Sources */,
 				8BDAD3541AA60A95009B3458 /* main.m in Sources */,
 				0F3FA3451AD6C41300BA7E58 /* IFVTabBarController.m in Sources */,
