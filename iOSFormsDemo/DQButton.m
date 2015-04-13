@@ -1,19 +1,19 @@
 //
-//  DQA11yTextField.m
+//  DEQDynamicTypeButton.m
 //  FormValidation
 //
-//  Created by Chris McMeeking on 4/10/15.
+//  Created by Chris McMeeking on 4/8/15.
 //  Copyright (c) 2015 Deque Developer. All rights reserved.
 //
 
-#import "DQA11yTextField.h"
-#import "DEQDynamicTypeTextView.h"
+#import "DQButton.h"
+#import "DQTextView.h"
 
-@implementation DQA11yTextField {
+@implementation DQButton {
     NSString* _contentSizeCategory;
 }
 
-- (id)init {
+-(id)init {
     self = [super init];
     
     if (self) {
@@ -23,7 +23,7 @@
     return self;
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder {
+-(id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     
     if (self) {
@@ -33,7 +33,7 @@
     return self;
 }
 
-- (id)initWithFrame:(CGRect)frame {
+-(id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     
     if (self) {
@@ -45,7 +45,7 @@
 
 -(void)initialize {
     
-    _contentSizeCategory = [DEQDynamicTypeTextView fontStyleForFont:self.font];
+    _contentSizeCategory = [DQTextView fontStyleForFont:self.titleLabel.font];
     
     [self didChangePreferredContentSize];
     
@@ -54,11 +54,15 @@
                                                  name:UIContentSizeCategoryDidChangeNotification
                                                object:nil];
     
-    
+    //Let's make our button pop out a little bit!
+    self.layer.shadowOffset = CGSizeMake(1,1);
+    self.layer.shadowOpacity = 1;
+    self.layer.cornerRadius = 3.0;
+    self.layer.shadowColor = [UIColor grayColor].CGColor;
 }
 
 -(void)didChangePreferredContentSize {
-    self.font = [UIFont preferredFontForTextStyle:_contentSizeCategory];
+    self.titleLabel.font = [UIFont preferredFontForTextStyle:_contentSizeCategory];
 }
 
 -(void)dealloc {

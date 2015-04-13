@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Deque Systems. All rights reserved.
 //
 
-#import "DEQDynamicTypeTextView.h"
+#import "DQTextView.h"
 
-@interface DEQDynamicTypeTextView ()
+@interface DQTextView ()
 @property (nonatomic, weak) NSLayoutConstraint* heightConstraint;
 @end
 
-@implementation DEQDynamicTypeTextView {
+@implementation DQTextView {
     NSString* _contentSizeCategory;
 }
 
@@ -117,7 +117,7 @@
 
 -(void)setContentSizeCategory:(NSString *)contentSizeCategory {
     
-    if ([DEQDynamicTypeTextView isValidContentSizeCategory:contentSizeCategory]) {
+    if ([DQTextView isValidContentSizeCategory:contentSizeCategory]) {
         
         _contentSizeCategory = contentSizeCategory;
     } else {

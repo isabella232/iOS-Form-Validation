@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Deque Systems. All rights reserved.
 //
 
-#import "DEQDynamicTypeLabel.h"
-#import "DEQDynamicTypeTextView.h"
+#import "DQLabel.h"
+#import "DQTextView.h"
 
-@implementation DEQDynamicTypeLabel {
+@implementation DQLabel {
     NSString* _contentSizeCategory;
 }
 
@@ -32,7 +32,7 @@
 }
 
 -(void)initialize {
-    _contentSizeCategory = [DEQDynamicTypeTextView fontStyleForFont:self.font];
+    [self setContentSizeCategory:[DQTextView fontStyleForFont:self.font]];
     
     [self didChangePreferredContentSize];
     
@@ -40,7 +40,6 @@
                                              selector:@selector(didChangePreferredContentSize)
                                                  name:UIContentSizeCategoryDidChangeNotification
                                                object:nil];
-    
 }
 
 -(void)didChangePreferredContentSize {
@@ -49,17 +48,16 @@
 
 -(void)setContentSizeCategory:(NSString *)contentSizeCategory {
     
-    if (_contentSizeCategory == UIFontTextStyleHeadline ||
-        _contentSizeCategory == UIFontTextStyleSubheadline ||
-        _contentSizeCategory == UIFontTextStyleFootnote ||
-        _contentSizeCategory == UIFontTextStyleCaption2 ||
-        _contentSizeCategory == UIFontTextStyleCaption1 ||
-        _contentSizeCategory == UIFontTextStyleBody) {
+    if ([DQTextView isValidContentSizeCategory:contentSizeCategory]) {
         
         _contentSizeCategory = contentSizeCategory;
     } else {
-        NSLog(@"%@ WARNING: Content Size Category not valid, setting to UIFontTextStyleHeadline by default", self);
-        _contentSizeCategory = UIFontTextStyleHeadline;
+        NSLog(@"WARNING: Content Size Category not valid, setting to \"UIFontTextStyleBody\" by default for element: %@", self);
+        _contentSizeCategory = UIFontTextStyleBody;
+    }
+    
+    if (_contentSizeCategory == UIFontTextStyleHeadline) {
+        self.accessibilityTraits |= UIAccessibilityTraitHeader;
     }
     
     [self didChangePreferredContentSize];

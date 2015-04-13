@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DEQDynamicTypeLabel : UILabel
+@interface DQLabel : UILabel
 
 @end

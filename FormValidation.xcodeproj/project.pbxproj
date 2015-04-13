@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F1711AC1ADC0ECD009E690E /* DQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1711AB1ADC0ECD009E690E /* DQViewController.m */; };
 		0F3C9D901AD0E91000D1FE9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDAD35B1AA60A95009B3458 /* Main.storyboard */; };
 		0F3C9D911AD0E91300D1FE9F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDAD3601AA60A95009B3458 /* LaunchScreen.xib */; };
 		0F3C9D941AD2D59D00D1FE9F /* CustomIOS7AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3C9D931AD2D59D00D1FE9F /* CustomIOS7AlertView.m */; };
-		0F3FA3341AD5741E00BA7E58 /* DEQDynamicTypeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA3311AD5741E00BA7E58 /* DEQDynamicTypeTextView.m */; };
-		0F3FA3351AD5741E00BA7E58 /* DEQDynamicTypeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA3331AD5741E00BA7E58 /* DEQDynamicTypeLabel.m */; };
-		0F3FA3391AD5836700BA7E58 /* DEQDynamicTypeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA3381AD5836700BA7E58 /* DEQDynamicTypeButton.m */; };
+		0F3FA3341AD5741E00BA7E58 /* DQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA3311AD5741E00BA7E58 /* DQTextView.m */; };
+		0F3FA3351AD5741E00BA7E58 /* DQLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA3331AD5741E00BA7E58 /* DQLabel.m */; };
+		0F3FA3391AD5836700BA7E58 /* DQButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA3381AD5836700BA7E58 /* DQButton.m */; };
 		0F3FA3451AD6C41300BA7E58 /* IFVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA3441AD6C41300BA7E58 /* IFVTabBarController.m */; };
-		0F3FCC1C1AD8535400709DC6 /* DQA11yTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FCC1B1AD8535400709DC6 /* DQA11yTextField.m */; };
+		0F3FCC1C1AD8535400709DC6 /* DQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FCC1B1AD8535400709DC6 /* DQTextField.m */; };
 		0FD92C401ACDA61C007E1BAE /* IFVBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD92C3F1ACDA61C007E1BAE /* IFVBrokenViewController.m */; };
 		0FD92C451ACDC93D007E1BAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FD92C441ACDC93D007E1BAE /* Localizable.strings */; };
 		8BD998091AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD998081AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m */; };
@@ -35,18 +36,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F1711AA1ADC0ECD009E690E /* DQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQViewController.h; sourceTree = "<group>"; };
+		0F1711AB1ADC0ECD009E690E /* DQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQViewController.m; sourceTree = "<group>"; };
 		0F3C9D921AD2D59D00D1FE9F /* CustomIOS7AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOS7AlertView.h; sourceTree = "<group>"; };
 		0F3C9D931AD2D59D00D1FE9F /* CustomIOS7AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOS7AlertView.m; sourceTree = "<group>"; };
-		0F3FA3301AD5741E00BA7E58 /* DEQDynamicTypeTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEQDynamicTypeTextView.h; sourceTree = "<group>"; };
-		0F3FA3311AD5741E00BA7E58 /* DEQDynamicTypeTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEQDynamicTypeTextView.m; sourceTree = "<group>"; };
-		0F3FA3321AD5741E00BA7E58 /* DEQDynamicTypeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEQDynamicTypeLabel.h; sourceTree = "<group>"; };
-		0F3FA3331AD5741E00BA7E58 /* DEQDynamicTypeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEQDynamicTypeLabel.m; sourceTree = "<group>"; };
-		0F3FA3371AD5836700BA7E58 /* DEQDynamicTypeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEQDynamicTypeButton.h; sourceTree = "<group>"; };
-		0F3FA3381AD5836700BA7E58 /* DEQDynamicTypeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEQDynamicTypeButton.m; sourceTree = "<group>"; };
+		0F3FA3301AD5741E00BA7E58 /* DQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQTextView.h; sourceTree = "<group>"; };
+		0F3FA3311AD5741E00BA7E58 /* DQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQTextView.m; sourceTree = "<group>"; };
+		0F3FA3321AD5741E00BA7E58 /* DQLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQLabel.h; sourceTree = "<group>"; };
+		0F3FA3331AD5741E00BA7E58 /* DQLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQLabel.m; sourceTree = "<group>"; };
+		0F3FA3371AD5836700BA7E58 /* DQButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQButton.h; sourceTree = "<group>"; };
+		0F3FA3381AD5836700BA7E58 /* DQButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQButton.m; sourceTree = "<group>"; };
 		0F3FA3431AD6C41300BA7E58 /* IFVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFVTabBarController.h; sourceTree = "<group>"; };
 		0F3FA3441AD6C41300BA7E58 /* IFVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVTabBarController.m; sourceTree = "<group>"; };
-		0F3FCC1A1AD8535400709DC6 /* DQA11yTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQA11yTextField.h; sourceTree = "<group>"; };
-		0F3FCC1B1AD8535400709DC6 /* DQA11yTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQA11yTextField.m; sourceTree = "<group>"; };
+		0F3FCC1A1AD8535400709DC6 /* DQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQTextField.h; sourceTree = "<group>"; };
+		0F3FCC1B1AD8535400709DC6 /* DQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQTextField.m; sourceTree = "<group>"; };
 		0FD92C3E1ACDA61C007E1BAE /* IFVBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFVBrokenViewController.h; sourceTree = "<group>"; };
 		0FD92C3F1ACDA61C007E1BAE /* IFVBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBrokenViewController.m; sourceTree = "<group>"; };
 		0FD92C441ACDC93D007E1BAE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -83,19 +86,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F3FA3361AD5832400BA7E58 /* DynamicTypeClasses */ = {
+		0F3FA3361AD5832400BA7E58 /* CustomA11yClasses */ = {
 			isa = PBXGroup;
 			children = (
-				0F3FA3301AD5741E00BA7E58 /* DEQDynamicTypeTextView.h */,
-				0F3FA3311AD5741E00BA7E58 /* DEQDynamicTypeTextView.m */,
-				0F3FA3321AD5741E00BA7E58 /* DEQDynamicTypeLabel.h */,
-				0F3FA3331AD5741E00BA7E58 /* DEQDynamicTypeLabel.m */,
-				0F3FA3371AD5836700BA7E58 /* DEQDynamicTypeButton.h */,
-				0F3FA3381AD5836700BA7E58 /* DEQDynamicTypeButton.m */,
-				0F3FCC1A1AD8535400709DC6 /* DQA11yTextField.h */,
-				0F3FCC1B1AD8535400709DC6 /* DQA11yTextField.m */,
+				0F3FA3301AD5741E00BA7E58 /* DQTextView.h */,
+				0F3FA3311AD5741E00BA7E58 /* DQTextView.m */,
+				0F3FA3321AD5741E00BA7E58 /* DQLabel.h */,
+				0F3FA3331AD5741E00BA7E58 /* DQLabel.m */,
+				0F3FA3371AD5836700BA7E58 /* DQButton.h */,
+				0F3FA3381AD5836700BA7E58 /* DQButton.m */,
+				0F3FCC1A1AD8535400709DC6 /* DQTextField.h */,
+				0F3FCC1B1AD8535400709DC6 /* DQTextField.m */,
+				0F1711AA1ADC0ECD009E690E /* DQViewController.h */,
+				0F1711AB1ADC0ECD009E690E /* DQViewController.m */,
 			);
-			name = DynamicTypeClasses;
+			name = CustomA11yClasses;
 			sourceTree = "<group>";
 		};
 		0FD92C3D1ACD9FBA007E1BAE /* ViewControllers */ = {
@@ -138,7 +143,7 @@
 				8BDAD3601AA60A95009B3458 /* LaunchScreen.xib */,
 				0F3C9D921AD2D59D00D1FE9F /* CustomIOS7AlertView.h */,
 				0F3C9D931AD2D59D00D1FE9F /* CustomIOS7AlertView.m */,
-				0F3FA3361AD5832400BA7E58 /* DynamicTypeClasses */,
+				0F3FA3361AD5832400BA7E58 /* CustomA11yClasses */,
 				0FD92C3D1ACD9FBA007E1BAE /* ViewControllers */,
 				8BDAD3511AA60A95009B3458 /* Supporting Files */,
 			);
@@ -276,15 +281,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F3FA3351AD5741E00BA7E58 /* DEQDynamicTypeLabel.m in Sources */,
+				0F1711AC1ADC0ECD009E690E /* DQViewController.m in Sources */,
+				0F3FA3351AD5741E00BA7E58 /* DQLabel.m in Sources */,
 				8BDAD35A1AA60A95009B3458 /* IFVFixedViewController.m in Sources */,
 				8BDAD3571AA60A95009B3458 /* AppDelegate.m in Sources */,
 				0FD92C401ACDA61C007E1BAE /* IFVBrokenViewController.m in Sources */,
 				0F3C9D941AD2D59D00D1FE9F /* CustomIOS7AlertView.m in Sources */,
-				0F3FA3341AD5741E00BA7E58 /* DEQDynamicTypeTextView.m in Sources */,
-				0F3FA3391AD5836700BA7E58 /* DEQDynamicTypeButton.m in Sources */,
+				0F3FA3341AD5741E00BA7E58 /* DQTextView.m in Sources */,
+				0F3FA3391AD5836700BA7E58 /* DQButton.m in Sources */,
 				8BDAD3541AA60A95009B3458 /* main.m in Sources */,
-				0F3FCC1C1AD8535400709DC6 /* DQA11yTextField.m in Sources */,
+				0F3FCC1C1AD8535400709DC6 /* DQTextField.m in Sources */,
 				0F3FA3451AD6C41300BA7E58 /* IFVTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

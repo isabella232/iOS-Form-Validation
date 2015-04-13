@@ -78,11 +78,11 @@
                             originalA11yHint:NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil)];
    
     if (_nameRequirement.text) {
-        UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, _nameField);
+        UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, _nameField.superview);
     } else if (_emailRequirement.text) {
-        UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, _emailField);
+        UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, _emailField.superview);
     } else if (_dateRequirement.text) {
-        UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, _dateField);
+        UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, _dateField.superview);
     }
 }
 
@@ -108,6 +108,8 @@
 
 - (IBAction)information:(id)sender {
     
+    UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, @"Alert Opened");
+    
     CustomIOS7AlertView *alertView = [CustomIOS7AlertView alertWithTitle:NSLocalizedString(@"ALERT_TITLE", nil)
                                                                  message:NSLocalizedString(@"ALERT_PARAGRAPH", nil)];
     
@@ -125,21 +127,19 @@
                                                                                  blue:1.0f
                                                                                 alpha:1.0f],nil]];
     
+    UIViewController* modalViewControlelr = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"AccessibleModal"];
+    modalViewControlelr.view.backgroundColor = [UIColor clearColor];
+    [modalViewControlelr setView:alertView];
+    self.modalPresentationStyle = UIModalPresentationCurrentContext;
+    [self.navigationController presentViewController:modalViewControlelr animated:YES completion:nil];
+    
     [alertView setDelegate:self];
     [alertView show];
     
-    UIViewController* modalViewControlelr = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"AccessibleModal"];
-    
-    modalViewControlelr.view.backgroundColor = [UIColor clearColor];
-    
-    [modalViewControlelr setView:alertView];
-    
-    self.modalPresentationStyle = UIModalPresentationCurrentContext;
-    
-    [self.navigationController presentViewController:modalViewControlelr animated:YES completion:nil];
-    
     self.view.accessibilityElementsHidden = YES;
     self.tabBarController.view.accessibilityElementsHidden = YES;
+    
+    
 }
 
 - (void)customIOS7dialogButtonTouchUpInside: (CustomIOS7AlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex {
@@ -153,7 +153,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     self.view.accessibilityElementsHidden = NO;
     self.tabBarController.view.accessibilityElementsHidden = NO;
-    UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, [self learnMoreLink]);
+    UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, [[self learnMoreLink] superview]);
 }
 
 + (BOOL)validateTextField:(UITextField*)textField
