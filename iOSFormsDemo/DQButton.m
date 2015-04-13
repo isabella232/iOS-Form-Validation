@@ -10,9 +10,13 @@
 #import "DQTextView.h"
 #import "UIFont+DQFont.h"
 
+
 @implementation DQButton {
     NSString* _contentSizeCategory;
+    BOOL _underlined;
 }
+
+@dynamic underlined;
 
 -(id)init {
     self = [super init];
@@ -68,6 +72,18 @@
 
 -(void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)setIsUnderlined:(BOOL)underlined {
+    if (underlined) {
+        NSMutableAttributedString* attributedText = [[NSMutableAttributedString alloc] initWithString:self.titleLabel.text];
+        [attributedText addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInt:NSUnderlineStyleSingle] range:NSMakeRange(0, attributedText.length)];
+        [self setAttributedTitle:attributedText forState:UIControlStateNormal];
+    } else {
+        NSMutableAttributedString* attributedText = [[self attributedTitleForState:UIControlStateNormal] mutableCopy];
+        [attributedText removeAttribute:NSUnderlineStyleAttributeName range:NSMakeRange(0, attributedText.length)];
+        [self setAttributedTitle:attributedText forState:UIControlStateNormal];
+    }
 }
 
 @end

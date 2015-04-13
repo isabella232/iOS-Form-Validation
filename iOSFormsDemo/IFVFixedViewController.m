@@ -53,9 +53,9 @@
     [IFVFixedViewController validateTextField:_dateField
                                   fieldLabel:_dateLabel
                                 warningLabel:_dateRequirement
-                              missingWarning:[NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil), NSLocalizedString(@"VALIDATION_ERROR_DATE_FORMAT", nil)]
-                            missingA11yLabel:[NSString stringWithFormat:@"%@ %@", _dateLabel.text, NSLocalizedString(@"VALIDATION_ERROR_MISSING_A11Y", nil)]
-                             missingA11yHint:NSLocalizedString(@"VALIDATION_ERROR_DATE_FORMAT_A11Y", nil)
+                              missingWarning:[NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil), NSLocalizedString(@"DATE_FORMAT", nil)]
+                            missingA11yLabel:[NSString stringWithFormat:@"%@ %@ %@", _dateLabel.text, NSLocalizedString(@"DATE_FORMAT_A11Y", nil), NSLocalizedString(@"VALIDATION_ERROR_MISSING_A11Y", nil)]
+                             missingA11yHint:nil
                                 forPredicate:[NSPredicate predicateWithFormat:NSLocalizedString(@"PREDICATE_STRING_DATE", nil)]
                             predicateWarning:NSLocalizedString(@"VALIDATION_ERROR_DATE_FORMAT", nil)
                           predicateA11yLabel:[NSString stringWithFormat:@"%@ %@", _dateLabel.text, NSLocalizedString(@"VALIDATION_ERROR_DATE_FORMAT_A11Y", nil)]

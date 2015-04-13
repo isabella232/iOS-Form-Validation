@@ -10,4 +10,6 @@
 
 @interface DQButton : UIButton
 
+@property (nonatomic, assign, getter=isUnderlined, setter=setIsUnderlined:) BOOL underlined;
+
 @end
