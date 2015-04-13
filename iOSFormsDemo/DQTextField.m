@@ -7,7 +7,7 @@
 //
 
 #import "DQTextField.h"
-#import "DQTextView.h"
+#import "UIFont+DQFont.h"
 
 @implementation DQTextField {
     NSString* _contentSizeCategory;
@@ -45,7 +45,7 @@
 
 -(void)initialize {
     
-    _contentSizeCategory = [DQTextView fontStyleForFont:self.font];
+    _contentSizeCategory = [self.font contentSizeCategory];
     
     [self didChangePreferredContentSize];
     

@@ -8,6 +8,7 @@
 
 #import "DQLabel.h"
 #import "DQTextView.h"
+#import "UIFont+DQFont.h"
 
 @implementation DQLabel {
     NSString* _contentSizeCategory;
@@ -32,7 +33,7 @@
 }
 
 -(void)initialize {
-    [self setContentSizeCategory:[DQTextView fontStyleForFont:self.font]];
+    [self setContentSizeCategory:[self.font contentSizeCategory]];
     
     [self didChangePreferredContentSize];
     

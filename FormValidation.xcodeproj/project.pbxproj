@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F1711AC1ADC0ECD009E690E /* DQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1711AB1ADC0ECD009E690E /* DQViewController.m */; };
+		0F1711AF1ADC3123009E690E /* UIFont+DQFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1711AE1ADC3123009E690E /* UIFont+DQFont.m */; };
 		0F3C9D901AD0E91000D1FE9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDAD35B1AA60A95009B3458 /* Main.storyboard */; };
 		0F3C9D911AD0E91300D1FE9F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDAD3601AA60A95009B3458 /* LaunchScreen.xib */; };
 		0F3C9D941AD2D59D00D1FE9F /* CustomIOS7AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3C9D931AD2D59D00D1FE9F /* CustomIOS7AlertView.m */; };
@@ -38,6 +39,8 @@
 /* Begin PBXFileReference section */
 		0F1711AA1ADC0ECD009E690E /* DQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQViewController.h; sourceTree = "<group>"; };
 		0F1711AB1ADC0ECD009E690E /* DQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQViewController.m; sourceTree = "<group>"; };
+		0F1711AD1ADC3123009E690E /* UIFont+DQFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+DQFont.h"; sourceTree = "<group>"; };
+		0F1711AE1ADC3123009E690E /* UIFont+DQFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+DQFont.m"; sourceTree = "<group>"; };
 		0F3C9D921AD2D59D00D1FE9F /* CustomIOS7AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOS7AlertView.h; sourceTree = "<group>"; };
 		0F3C9D931AD2D59D00D1FE9F /* CustomIOS7AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOS7AlertView.m; sourceTree = "<group>"; };
 		0F3FA3301AD5741E00BA7E58 /* DQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQTextView.h; sourceTree = "<group>"; };
@@ -86,7 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F3FA3361AD5832400BA7E58 /* CustomA11yClasses */ = {
+		0F1711B01ADC3130009E690E /* DQCategories */ = {
+			isa = PBXGroup;
+			children = (
+				0F1711AD1ADC3123009E690E /* UIFont+DQFont.h */,
+				0F1711AE1ADC3123009E690E /* UIFont+DQFont.m */,
+			);
+			name = DQCategories;
+			sourceTree = "<group>";
+		};
+		0F3FA3361AD5832400BA7E58 /* DQClasses */ = {
 			isa = PBXGroup;
 			children = (
 				0F3FA3301AD5741E00BA7E58 /* DQTextView.h */,
@@ -100,7 +112,7 @@
 				0F1711AA1ADC0ECD009E690E /* DQViewController.h */,
 				0F1711AB1ADC0ECD009E690E /* DQViewController.m */,
 			);
-			name = CustomA11yClasses;
+			name = DQClasses;
 			sourceTree = "<group>";
 		};
 		0FD92C3D1ACD9FBA007E1BAE /* ViewControllers */ = {
@@ -143,7 +155,8 @@
 				8BDAD3601AA60A95009B3458 /* LaunchScreen.xib */,
 				0F3C9D921AD2D59D00D1FE9F /* CustomIOS7AlertView.h */,
 				0F3C9D931AD2D59D00D1FE9F /* CustomIOS7AlertView.m */,
-				0F3FA3361AD5832400BA7E58 /* CustomA11yClasses */,
+				0F1711B01ADC3130009E690E /* DQCategories */,
+				0F3FA3361AD5832400BA7E58 /* DQClasses */,
 				0FD92C3D1ACD9FBA007E1BAE /* ViewControllers */,
 				8BDAD3511AA60A95009B3458 /* Supporting Files */,
 			);
@@ -283,6 +296,7 @@
 			files = (
 				0F1711AC1ADC0ECD009E690E /* DQViewController.m in Sources */,
 				0F3FA3351AD5741E00BA7E58 /* DQLabel.m in Sources */,
+				0F1711AF1ADC3123009E690E /* UIFont+DQFont.m in Sources */,
 				8BDAD35A1AA60A95009B3458 /* IFVFixedViewController.m in Sources */,
 				8BDAD3571AA60A95009B3458 /* AppDelegate.m in Sources */,
 				0FD92C401ACDA61C007E1BAE /* IFVBrokenViewController.m in Sources */,

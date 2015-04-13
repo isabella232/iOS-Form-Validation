@@ -10,7 +10,6 @@
 
 @interface DQTextView : UITextView
 
-+(NSString*const)fontStyleForFont:(UIFont*const)font;
 +(BOOL)isValidContentSizeCategory:(NSString*const)contentSizeCategory;
 
 @end

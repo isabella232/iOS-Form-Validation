@@ -8,6 +8,7 @@
 #import "regex.h"
 #import "IFVFixedViewController.h"
 #import "CustomIOS7AlertView.h"
+#import "UIFont+DQFont.h"
 
 @interface IFVFixedViewController ()<CustomIOS7AlertViewDelegate>
 @end
