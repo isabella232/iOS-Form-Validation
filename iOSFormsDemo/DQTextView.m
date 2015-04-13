@@ -6,33 +6,15 @@
 //  Copyright (c) 2015 Deque Systems. All rights reserved.
 //
 
-#import "DEQDynamicTypeTextView.h"
+#import "DQTextView.h"
+#import "UIFont+DQFont.h"
 
-@interface DEQDynamicTypeTextView ()
+@interface DQTextView ()
 @property (nonatomic, weak) NSLayoutConstraint* heightConstraint;
 @end
 
-@implementation DEQDynamicTypeTextView {
+@implementation DQTextView {
     NSString* _contentSizeCategory;
-}
-
-+(NSString*const)fontStyleForFont:(UIFont*const)font {
-    if ([font isEqual:[UIFont preferredFontForTextStyle:UIFontTextStyleBody]]) {
-        return UIFontTextStyleBody;
-    } else if ([font isEqual:[UIFont preferredFontForTextStyle:UIFontTextStyleCaption1]]) {
-        return UIFontTextStyleCaption1;
-    } else if ([font isEqual:[UIFont preferredFontForTextStyle:UIFontTextStyleCaption2]]) {
-        return UIFontTextStyleCaption2;
-    } else if ([font isEqual:[UIFont preferredFontForTextStyle:UIFontTextStyleFootnote]]) {
-        return UIFontTextStyleFootnote;
-    } else if ([font isEqual:[UIFont preferredFontForTextStyle:UIFontTextStyleHeadline]]) {
-        return UIFontTextStyleHeadline;
-    } else if ([font isEqual:[UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline]]) {
-        return UIFontTextStyleSubheadline;
-    } else {
-        NSLog(@"Warning: It appears the font is not a dynamic type, defaulting to UIFontTestStyleBody");
-        return UIFontTextStyleBody;
-    }
 }
 
 +(BOOL)isValidContentSizeCategory:(NSString*const)contentSizeCategory {
@@ -73,7 +55,7 @@
 
 -(void)initialize {
     
-    _contentSizeCategory = [self.class fontStyleForFont:self.font];
+    _contentSizeCategory = [self.font contentSizeCategory];
 
     self.scrollEnabled = NO;
 
@@ -117,7 +99,7 @@
 
 -(void)setContentSizeCategory:(NSString *)contentSizeCategory {
     
-    if ([DEQDynamicTypeTextView isValidContentSizeCategory:contentSizeCategory]) {
+    if ([DQTextView isValidContentSizeCategory:contentSizeCategory]) {
         
         _contentSizeCategory = contentSizeCategory;
     } else {

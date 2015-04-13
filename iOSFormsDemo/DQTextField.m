@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Deque Developer. All rights reserved.
 //
 
-#import "DQA11yTextField.h"
-#import "DEQDynamicTypeTextView.h"
+#import "DQTextField.h"
+#import "UIFont+DQFont.h"
 
-@implementation DQA11yTextField {
+@implementation DQTextField {
     NSString* _contentSizeCategory;
 }
 
@@ -45,7 +45,7 @@
 
 -(void)initialize {
     
-    _contentSizeCategory = [DEQDynamicTypeTextView fontStyleForFont:self.font];
+    _contentSizeCategory = [self.font contentSizeCategory];
     
     [self didChangePreferredContentSize];
     

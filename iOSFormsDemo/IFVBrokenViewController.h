@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DQViewController.h"
 
-@interface IFVBrokenViewController : UIViewController <UITextFieldDelegate>
+@interface IFVBrokenViewController : DQViewController <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *emailLabel;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;

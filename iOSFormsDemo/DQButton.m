@@ -6,12 +6,17 @@
 //  Copyright (c) 2015 Deque Developer. All rights reserved.
 //
 
-#import "DEQDynamicTypeButton.h"
-#import "DEQDynamicTypeTextView.h"
+#import "DQButton.h"
+#import "DQTextView.h"
+#import "UIFont+DQFont.h"
 
-@implementation DEQDynamicTypeButton {
+
+@implementation DQButton {
     NSString* _contentSizeCategory;
+    BOOL _underlined;
 }
+
+@dynamic underlined;
 
 -(id)init {
     self = [super init];
@@ -45,7 +50,7 @@
 
 -(void)initialize {
     
-    _contentSizeCategory = [DEQDynamicTypeTextView fontStyleForFont:self.titleLabel.font];
+    _contentSizeCategory = self.titleLabel.font.contentSizeCategory;
     
     [self didChangePreferredContentSize];
     
@@ -67,6 +72,18 @@
 
 -(void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)setIsUnderlined:(BOOL)underlined {
+    if (underlined) {
+        NSMutableAttributedString* attributedText = [[NSMutableAttributedString alloc] initWithString:self.titleLabel.text];
+        [attributedText addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInt:NSUnderlineStyleSingle] range:NSMakeRange(0, attributedText.length)];
+        [self setAttributedTitle:attributedText forState:UIControlStateNormal];
+    } else {
+        NSMutableAttributedString* attributedText = [[self attributedTitleForState:UIControlStateNormal] mutableCopy];
+        [attributedText removeAttribute:NSUnderlineStyleAttributeName range:NSMakeRange(0, attributedText.length)];
+        [self setAttributedTitle:attributedText forState:UIControlStateNormal];
+    }
 }
 
 @end

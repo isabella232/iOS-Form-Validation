@@ -1,5 +1,5 @@
 //
-//  IACResizingLabel.h
+//  IACTextView.h
 //  Accessibility 101
 //
 //  Created by Chris McMeeking on 3/31/15.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DEQDynamicTypeLabel : UILabel
+@interface DQTextView : UITextView
+
++(BOOL)isValidContentSizeCategory:(NSString*const)contentSizeCategory;
 
 @end
