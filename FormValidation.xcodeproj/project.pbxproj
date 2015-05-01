@@ -21,6 +21,7 @@
 		0FD92C451ACDC93D007E1BAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FD92C441ACDC93D007E1BAE /* Localizable.strings */; };
 		0FEFA45C1ADC42DD00D87A45 /* IFVAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA45B1ADC42DD00D87A45 /* IFVAboutViewController.m */; };
 		8B91C4821AF3C52C005C4F3F /* UIColor+DQColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B91C4811AF3C52C005C4F3F /* UIColor+DQColor.m */; };
+		8B91C4841AF3C98C005C4F3F /* IFVBrokenViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B91C4831AF3C98C005C4F3F /* IFVBrokenViewControllerTests.m */; };
 		8BD998091AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD998081AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m */; };
 		8BDAD3541AA60A95009B3458 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD3531AA60A95009B3458 /* main.m */; };
 		8BDAD3571AA60A95009B3458 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD3561AA60A95009B3458 /* AppDelegate.m */; };
@@ -62,6 +63,7 @@
 		0FEFA45B1ADC42DD00D87A45 /* IFVAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVAboutViewController.m; sourceTree = "<group>"; };
 		8B91C4801AF3C52C005C4F3F /* UIColor+DQColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DQColor.h"; sourceTree = "<group>"; };
 		8B91C4811AF3C52C005C4F3F /* UIColor+DQColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DQColor.m"; sourceTree = "<group>"; };
+		8B91C4831AF3C98C005C4F3F /* IFVBrokenViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBrokenViewControllerTests.m; sourceTree = "<group>"; };
 		8BD998081AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBestViewControllerTests.m; sourceTree = "<group>"; };
 		8BDAD34E1AA60A95009B3458 /* FormValidation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormValidation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDAD3521AA60A95009B3458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				8BD998081AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m */,
+				8B91C4831AF3C98C005C4F3F /* IFVBrokenViewControllerTests.m */,
 				8BDAD36B1AA60A95009B3458 /* Supporting Files */,
 			);
 			name = FormValidationTests;
@@ -326,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BD998091AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m in Sources */,
+				8B91C4841AF3C98C005C4F3F /* IFVBrokenViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
