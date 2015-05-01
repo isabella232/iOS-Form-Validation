@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DQA11yTextField : UITextField
+@interface DQTextField : UITextField
 
 @end
