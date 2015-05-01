@@ -19,7 +19,7 @@
     
     [self getRed:&redVal green:&greenVal blue:&blueVal alpha:&alphaVal];
     
-    return (testred == redVal && testalpha == alphaVal && testblue == blueVal && testgreen == greenVal);
+    return (testred -0.001 < redVal && testred+0.001 > redVal && testalpha -0.001 < alphaVal && testalpha +0.001 > alphaVal && testblue -0.001 < blueVal && testblue +0.001 > blueVal && testgreen -0.001 < greenVal && testgreen+ 0.001 > greenVal);
     
 }
 

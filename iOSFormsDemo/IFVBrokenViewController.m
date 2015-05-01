@@ -8,7 +8,7 @@
 
 #import "regex.h"
 #import "IFVBrokenViewController.h"
-#import "IFVBestViewController.h"
+#import "IFVFixedViewController.h"
 #import "CustomIOS7AlertView.h"
 
 @interface IFVBrokenViewController()<CustomIOS7AlertViewDelegate>

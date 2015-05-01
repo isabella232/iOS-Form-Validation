@@ -14,13 +14,15 @@
 		0F3FA3351AD5741E00BA7E58 /* DEQDynamicTypeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA3331AD5741E00BA7E58 /* DEQDynamicTypeLabel.m */; };
 		0F3FA3391AD5836700BA7E58 /* DEQDynamicTypeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA3381AD5836700BA7E58 /* DEQDynamicTypeButton.m */; };
 		0F3FA3451AD6C41300BA7E58 /* IFVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA3441AD6C41300BA7E58 /* IFVTabBarController.m */; };
+		0F3FCC1C1AD8535400709DC6 /* DQA11yTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FCC1B1AD8535400709DC6 /* DQA11yTextField.m */; };
 		0FD92C401ACDA61C007E1BAE /* IFVBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD92C3F1ACDA61C007E1BAE /* IFVBrokenViewController.m */; };
 		0FD92C451ACDC93D007E1BAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FD92C441ACDC93D007E1BAE /* Localizable.strings */; };
-		8B91C4781AD86D77005C4F3F /* UIColor+DQColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B91C4771AD86D77005C4F3F /* UIColor+DQColor.m */; };
+		8B91C47B1ADC194D005C4F3F /* UIColor+DQColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B91C47A1ADC194D005C4F3F /* UIColor+DQColor.m */; };
+		8B91C47F1ADC1E30005C4F3F /* IFVBrokenViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B91C47E1ADC1E30005C4F3F /* IFVBrokenViewControllerTests.m */; };
 		8BD998091AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD998081AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m */; };
 		8BDAD3541AA60A95009B3458 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD3531AA60A95009B3458 /* main.m */; };
 		8BDAD3571AA60A95009B3458 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD3561AA60A95009B3458 /* AppDelegate.m */; };
-		8BDAD35A1AA60A95009B3458 /* IFVBestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD3591AA60A95009B3458 /* IFVBestViewController.m */; };
+		8BDAD35A1AA60A95009B3458 /* IFVFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAD3591AA60A95009B3458 /* IFVFixedViewController.m */; };
 		8BDAD35F1AA60A95009B3458 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BDAD35E1AA60A95009B3458 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -45,19 +47,22 @@
 		0F3FA3381AD5836700BA7E58 /* DEQDynamicTypeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEQDynamicTypeButton.m; sourceTree = "<group>"; };
 		0F3FA3431AD6C41300BA7E58 /* IFVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFVTabBarController.h; sourceTree = "<group>"; };
 		0F3FA3441AD6C41300BA7E58 /* IFVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVTabBarController.m; sourceTree = "<group>"; };
+		0F3FCC1A1AD8535400709DC6 /* DQA11yTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQA11yTextField.h; sourceTree = "<group>"; };
+		0F3FCC1B1AD8535400709DC6 /* DQA11yTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQA11yTextField.m; sourceTree = "<group>"; };
 		0FD92C3E1ACDA61C007E1BAE /* IFVBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFVBrokenViewController.h; sourceTree = "<group>"; };
 		0FD92C3F1ACDA61C007E1BAE /* IFVBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBrokenViewController.m; sourceTree = "<group>"; };
 		0FD92C441ACDC93D007E1BAE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		8B91C4761AD86D77005C4F3F /* UIColor+DQColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DQColor.h"; sourceTree = "<group>"; };
-		8B91C4771AD86D77005C4F3F /* UIColor+DQColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DQColor.m"; sourceTree = "<group>"; };
+		8B91C4791ADC194D005C4F3F /* UIColor+DQColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DQColor.h"; sourceTree = "<group>"; };
+		8B91C47A1ADC194D005C4F3F /* UIColor+DQColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DQColor.m"; sourceTree = "<group>"; };
+		8B91C47E1ADC1E30005C4F3F /* IFVBrokenViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBrokenViewControllerTests.m; sourceTree = "<group>"; };
 		8BD998081AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBestViewControllerTests.m; sourceTree = "<group>"; };
 		8BDAD34E1AA60A95009B3458 /* FormValidation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormValidation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDAD3521AA60A95009B3458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BDAD3531AA60A95009B3458 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BDAD3551AA60A95009B3458 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8BDAD3561AA60A95009B3458 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8BDAD3581AA60A95009B3458 /* IFVBestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFVBestViewController.h; sourceTree = "<group>"; };
-		8BDAD3591AA60A95009B3458 /* IFVBestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFVBestViewController.m; sourceTree = "<group>"; };
+		8BDAD3581AA60A95009B3458 /* IFVFixedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFVFixedViewController.h; sourceTree = "<group>"; };
+		8BDAD3591AA60A95009B3458 /* IFVFixedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFVFixedViewController.m; sourceTree = "<group>"; };
 		8BDAD35C1AA60A95009B3458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BDAD35E1AA60A95009B3458 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8BDAD3611AA60A95009B3458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -92,6 +97,10 @@
 				0F3FA3331AD5741E00BA7E58 /* DEQDynamicTypeLabel.m */,
 				0F3FA3371AD5836700BA7E58 /* DEQDynamicTypeButton.h */,
 				0F3FA3381AD5836700BA7E58 /* DEQDynamicTypeButton.m */,
+				0F3FCC1A1AD8535400709DC6 /* DQA11yTextField.h */,
+				0F3FCC1B1AD8535400709DC6 /* DQA11yTextField.m */,
+				8B91C4791ADC194D005C4F3F /* UIColor+DQColor.h */,
+				8B91C47A1ADC194D005C4F3F /* UIColor+DQColor.m */,
 			);
 			name = DynamicTypeClasses;
 			sourceTree = "<group>";
@@ -103,10 +112,8 @@
 				0F3FA3441AD6C41300BA7E58 /* IFVTabBarController.m */,
 				0FD92C3E1ACDA61C007E1BAE /* IFVBrokenViewController.h */,
 				0FD92C3F1ACDA61C007E1BAE /* IFVBrokenViewController.m */,
-				8BDAD3581AA60A95009B3458 /* IFVBestViewController.h */,
-				8BDAD3591AA60A95009B3458 /* IFVBestViewController.m */,
-				8B91C4761AD86D77005C4F3F /* UIColor+DQColor.h */,
-				8B91C4771AD86D77005C4F3F /* UIColor+DQColor.m */,
+				8BDAD3581AA60A95009B3458 /* IFVFixedViewController.h */,
+				8BDAD3591AA60A95009B3458 /* IFVFixedViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -161,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				8BD998081AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m */,
+				8B91C47E1ADC1E30005C4F3F /* IFVBrokenViewControllerTests.m */,
 				8BDAD36B1AA60A95009B3458 /* Supporting Files */,
 			);
 			name = FormValidationTests;
@@ -277,15 +285,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F3FA3351AD5741E00BA7E58 /* DEQDynamicTypeLabel.m in Sources */,
-				8BDAD35A1AA60A95009B3458 /* IFVBestViewController.m in Sources */,
+				8BDAD35A1AA60A95009B3458 /* IFVFixedViewController.m in Sources */,
 				8BDAD3571AA60A95009B3458 /* AppDelegate.m in Sources */,
 				0FD92C401ACDA61C007E1BAE /* IFVBrokenViewController.m in Sources */,
 				0F3C9D941AD2D59D00D1FE9F /* CustomIOS7AlertView.m in Sources */,
 				0F3FA3341AD5741E00BA7E58 /* DEQDynamicTypeTextView.m in Sources */,
-				8B91C4781AD86D77005C4F3F /* UIColor+DQColor.m in Sources */,
 				0F3FA3391AD5836700BA7E58 /* DEQDynamicTypeButton.m in Sources */,
 				8BDAD3541AA60A95009B3458 /* main.m in Sources */,
+				0F3FCC1C1AD8535400709DC6 /* DQA11yTextField.m in Sources */,
 				0F3FA3451AD6C41300BA7E58 /* IFVTabBarController.m in Sources */,
+				8B91C47B1ADC194D005C4F3F /* UIColor+DQColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BD998091AA8BAAF00DBA6AF /* IFVBestViewControllerTests.m in Sources */,
+				8B91C47F1ADC1E30005C4F3F /* IFVBrokenViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
